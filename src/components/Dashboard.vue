@@ -1,23 +1,28 @@
 <template>
   <div class="dashboard">
-    <h1>这个主页面还没进行开发</h1>
-    <validator name="validation1">
-      <form novalidate>
-        <div class="username-field">
-          <label for="username">username:</label>
-          <input id="username" type="text" v-validate:username="['required']">
-        </div>
-        <div class="comment-field">
-          <label for="comment">comment:</label>
-          <input id="comment" type="text" v-validate:comment="{ maxlength: 256 }">
-        </div>
-        <div class="errors">
-          <p v-if="$validation1.username.required">Required your name.</p>
-          <p v-if="$validation1.comment.maxlength">Your comment is too long.</p>
-        </div>
-        <input type="submit" value="send" v-if="$validation1.valid">
-      </form>
-    </validator>
+    <h1>这个主页面还没进行开</h1>
+    <vue-form :state="formstate" @submit.prevent="onSubmit">
+
+      <validate tag="label">
+        <span>Name *</span>
+        <input v-model="model.name" required name="name" />
+
+        <form-error field="name" error="required">Name is a required field</form-error>
+      </validate>
+
+      <validate tag="label">
+        <span>Email</span>
+        <input v-model="model.email" name="email" type="email" required />
+
+        <form-errors field="email">
+          <div slot="required">Email is a required field</div>
+          <div slot="email">Email is not valid</div>
+        </form-errors>
+      </validate>
+
+      <button type="submit">Submit</button>
+    </vue-form>
+    <pre>{{ formstate }}</pre>
 
   </div>
 </template>
@@ -35,6 +40,24 @@
 <script>
 
 export default {
+     data () {
+       return {
+         formstate: {},
+         model: {
+            name: '',
+            email: 'invalid-email'
+         }
+       }
+     },
+
+     methods: {
+       onSubmit: function () {
+          if(this.formstate.$Invalid) {
+        // alert user and exit early
+             return;
+      }
+     },
+     },
    mounted: function(){
    /*
        this.$http.post('/hikcmd/global/disks/',{
