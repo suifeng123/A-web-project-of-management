@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/ActionPool/ActionCreate.vue" line="13" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ActionPool/ActionCreate.vue" afterPath="$PROJECT_DIR$/src/components/ActionPool/ActionCreate.vue" />
-    </list>
+    <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -317,12 +315,12 @@
       <option name="presentableId" value="Default" />
       <updated>1489640515949</updated>
       <workItem from="1489640517963" duration="6077000" />
-      <workItem from="1489726901794" duration="9603000" />
+      <workItem from="1489726901794" duration="9806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15680000" />
+    <option name="totallyTimeSpent" value="15883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
