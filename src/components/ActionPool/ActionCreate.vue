@@ -20,24 +20,27 @@
             <validate tag="label" class="validate">
               <div style="display:inline-block;width:600px;">
             <label>控制器*</label>
-            <select required class="col-lg" v-model="controller">
+            <select required name="controller" class="col-lg" v-model="controller">
               <option v-for="option in controllers">
                 {{option}}
               </option>
             </select>
                 </div>
+              <div style="width:400px;" class="alert">
+                <form-error field="controller" error="required">这个选项时必选的</form-error>
+              </div>
             </validate>
           </div>
           <div class="form-group">
             <div class="div_table_left">
-              <label style="margin-top:-1000px;">成员盘</label>
+              <label style="margin-top:-1000px;">成员盘*</label>
             </div>
-            <div style="display:inline-block;">
-              <table>
+            <div style="display:inline-block; width:400px;">
+              <table style="width:400px;">
                 <thead>
                 <tr>
                   <td></td>
-                  <td>名称</td>
+                  <td style="font-size:20px;">名称</td>
                 </tr>
                 </thead>
                 <tbody>
@@ -52,16 +55,35 @@
             </div>
           </div>
           <div class="form-group">
+            <validate tag="label" class="validate">
+              <div style="display:inline-block;width:600px;">
             <label>加密</label>
-            <input type="checkbox" v-model="entrycheck" />
+            <select required name="entry" class="col-lg" v-model="entry">
+              <option v-for="option in entrycheck">
+                {{option}}
+              </option>
+            </select>
+              </div>
+              <div style="width:400px;" class="alert">
+                <form-error field="entry" error="required">这个选项时必选的</form-error>
+              </div>
+            </validate>
           </div>
           <div class="form-group">
-            <label>重删</label>
-            <select required class="col-lg" v-model="initial">
+            <validate tag="label" class="validate">
+              <div style="display:inline-block;width:600px;">
+              <label>重删*</label>
+            <select required
+                    name="chonshan" class="col-lg" v-model="initial">
               <option v-for="option in options">
                 {{option}}
               </option>
             </select>
+              </div>
+              <div style="width:400px;" class="alert">
+                <form-error field="chongshan" error="required">这个选项时必选的</form-error>
+              </div>
+            </validate>
           </div>
           <div class="form-group">
             <div class="div_table_left">
@@ -71,20 +93,20 @@
               <table>
                 <thead>
                 <tr>
-                  <td>磁盘</td>
-                  <td>无</td>
-                  <td>Log</td>
-                  <td>Cache</td>
-                  <td>Spare</td>
+                  <td style="font-size:20px;">磁盘</td>
+                  <td style="font-size:20px;">无</td>
+                  <td style="font-size:20px;">Log</td>
+                  <td style="font-size:20px;">Cache</td>
+                  <td style="font-size:20px;">Spare</td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr v-for="data in copydisks">
                   <td>{{data.name}}</td>
-                  <td><input type="checkbox" v-model="check_none" value="check_none"/> </td>
-                  <td><input type="checkbox"  /> </td>
-                  <td><input type="checkbox"  /> </td>
-                  <td><input type="checkbox"  /> </td>
+                  <td><input type="checkbox"  value="true"/> </td>
+                  <td><input type="checkbox" value="data.checkbox_log" /> </td>
+                  <td><input type="checkbox" value="data.checkbox_cache" /> </td>
+                  <td><input type="checkbox"  value="data.checkbox_spare"/> </td>
                 </tr>
                 </tbody>
               </table>
@@ -129,7 +151,7 @@
   font: 12px Georgia, "Times New Roman", Times, serif;
 }
 .maindiv h1{
-   font-size: 25px;
+   font-size: 20px;
   padding: 0px 0px 10px 40px;
   display: block;
   border-bottom:1px solid #E4E4E4;
@@ -156,7 +178,7 @@
   margin-left:50px;
 }
 label {
-  font-size:20px;
+  font-size:10px;
   width:100px;
 }
   .panel-head {
@@ -184,6 +206,62 @@ label {
     width:400px;
     display:inline-block;
   }
+  /**add by 王圣文 ***/
+  table {
+   background-color: #FFF;
+    border: none;
+    color: #565;
+    font: 12px arial;
+  }
+
+  table, td, th {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align:left;
+}
+
+tbody td, tbody th {
+    background-color: #DFC;
+    border-bottom: 2px solid #B3DE94;
+    border-top: 3px solid #FFFFFF;
+    padding: 9px;
+    font-size:20px;
+}
+
+
+tfoot td, tfoot th {
+    font-weight: bold;
+    padding: 4px 8px 6px 9px;
+    text-align:center;
+}
+
+thead th {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 0 8px 2px;
+    text-align:center;
+}
+thead th tr td {
+  font-size:20px;
+}
+
+tbody tr.odd th,tbody tr.odd td { /*odd就是偶数行*/
+    background-color: #CEA;
+    border-bottom: 2px solid #67BD2A;
+}
+
+td+td+td, /*第三个td以及之后的td元素*/
+col.price{ /*类样式*/
+    text-align:right;
+}
+
+tbody tr:hover td, tbody tr:hover th { /*tr也有hover样式*/
+    background-color: #8b7;
+    color:#fff;
+}
+
 </style>
 <script>
 import MyHeader from '../Header'
@@ -198,11 +276,13 @@ export default {
         options:["开启","关闭","验证"],
         copydisks:[],
         checkedNames:[],
-        entrycheck:false,
+        entrycheck:['是','否'],
         check_none:true,
         name:'',
         controller:'',
-        formstate:{}
+        formstate:{},
+        entry:''
+
       }
    },
    created: function(){
@@ -216,7 +296,11 @@ export default {
             for(let i=0;i<4;i++){
             this.disks.push({
                checkbox:false,
-               name:content[i].name
+               name:content[i].name,
+               checkbox_none:true,
+               checkbox_log:false,
+               checkbox_cache:false,
+               checkbox_spare:false
             })
             }
            this.copydisks = this.disks;
