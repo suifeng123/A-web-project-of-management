@@ -192,7 +192,6 @@ import Leftbar from '../Leftbar'
 export default {
    data() {
       return {
-       flag:"",
         disks:[],
         initial:'关闭',
         controllers:['A','B'],
