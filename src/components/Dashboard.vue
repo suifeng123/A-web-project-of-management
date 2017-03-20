@@ -1,6 +1,9 @@
 <template>
   <div class="dashboard">
     <h1>这个主页面还没进行开</h1>
+    <h1>这个主页面还没进行开</h1>
+    <h1>这个主页面还没进行开</h1>
+    <h1>这个主页面还没进行开</h1>
     <vue-form :state="formstate" @submit.prevent="onSubmit">
 
       <validate tag="label">
