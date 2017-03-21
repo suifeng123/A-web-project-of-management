@@ -4,9 +4,9 @@
       <!--这里使用boostrap来设置左侧导航栏-->
       <ul id="ul1" class="ul1">
         <li>
-
+          <router-link to="/">
           <span><img  class="img1" src="./images/left/system_current.png">总览</span>
-
+          </router-link>
         </li>
         <li>
 

@@ -1,29 +1,7 @@
 <template>
   <div class="dashboard">
-    <h1>这个主页面还没进行开</h1>
-    <vue-form :state="formstate" @submit.prevent="onSubmit">
-
-      <validate tag="label">
-        <span>Name *</span>
-        <input v-model="model.name" required name="name" />
-
-        <form-error field="name" error="required">Name is a required field</form-error>
-      </validate>
-
-      <validate tag="label">
-        <span>Email</span>
-        <input v-model="model.email" name="email" type="email" required />
-
-        <form-errors field="email">
-          <div slot="required">Email is a required field</div>
-          <div slot="email">Email is not valid</div>
-        </form-errors>
-      </validate>
-
-      <button type="submit">Submit</button>
-    </vue-form>
-    <pre>{{ formstate }}</pre>
-
+    <BandWidth></BandWidth>
+    <System></System>
   </div>
 </template>
 <style scoped>
@@ -38,7 +16,8 @@
 }
 </style>
 <script>
-
+import BandWidth from './Dashboard/BandWidth'
+import System from './Dashboard/System'
 export default {
      data () {
        return {
@@ -87,10 +66,10 @@ export default {
             console.log("失败了")
          })
          */
-
-
-
-
+   },
+   components:{
+      BandWidth,
+      System
    }
 }
 
