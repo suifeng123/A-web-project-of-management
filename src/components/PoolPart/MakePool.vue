@@ -33,6 +33,7 @@
           <th width="20px;">运行控制器</th>
           <th width="20px;">配置控制器</th>
           <th width="20px;">大小</th>
+          <th width="20px;">状态</th>
         </tr>
         </thead>
         <tbody>
@@ -43,6 +44,7 @@
           <td  v-text="data.config_controller"></td>
           <td  v-text="data.run_controller"></td>
           <td  v-text="data.size"></td>
+          <td  v-text="data.status"></td>
 
         </tr>
 

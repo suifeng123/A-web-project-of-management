@@ -103,10 +103,10 @@
                 <tbody>
                 <tr v-for="data in copydisks">
                   <td>{{data.name}}</td>
-                  <td><input type="checkbox"  value="true"/> </td>
-                  <td><input type="checkbox" value="data.checkbox_log" /> </td>
-                  <td><input type="checkbox" value="data.checkbox_cache" /> </td>
-                  <td><input type="checkbox"  value="data.checkbox_spare"/> </td>
+                  <td><input type="checkbox" @click="changeTabNone(data)" v-model="data.checkbox_none" value="data.check_none"></td>
+                  <td><input type="checkbox" @click="changeTabLog(data)" v-model="data.checkbox_log" value="data.check_log" /> </td>
+                  <td><input type="checkbox" @click="changeTabCache(data)" v-model="data.checkbox_cache" value="data.check_cache" /> </td>
+                  <td><input type="checkbox" @click="changeTabSpare(data)" v-model="data.checkbox_spare" value="data.checkbox_spare"/> </td>
                 </tr>
                 </tbody>
               </table>
@@ -304,6 +304,8 @@ export default {
             })
             }
            this.copydisks = this.disks;
+           console.log("这是获取的数据什么？？？");
+           console.log(this.copydisks[0].checkbox_none);
       },res=>{
             console.log("获取磁盘信息失败");
       })
@@ -356,6 +358,53 @@ export default {
               this.$router.push({path:'/storage/chi/'})
               }
             )
+     },
+     changeTabNone: function(data){
+      if(data.checkbox_none==true){
+        data.checkbox_log = false;
+        data.checkbox_cache = false;
+        data.checkbox_spare = false;
+        }else{
+            data.checkbox_log = true;
+            data.checkbox_cache = false;
+            data.check_spare = false;
+        }
+
+     },
+     changeTabLog: function(data){
+        console.log("现在的数据为:");
+        if(data.checkbox_log==true){
+        data.checkbox_none = false;
+        data.checkbox_cache = false;
+        data.checkbox_spare = false;
+        }else{
+            data.checkbox_none = true ;
+            data.checkbox_cache = false;
+            data.check_spare = false;
+        }
+     },
+     changeTabCache: function(data){
+
+       if(data.checkbox_cache==true){
+        data.checkbox_none = false;
+        data.checkbox_log = false;
+        data.checkbox_spare = false;
+        }else{
+            data.checkbox_none = true;
+            data.checkbox_log = false;
+            data.check_spare = false;
+        }
+     },
+     changeTabSpare: function(data){
+       if(data.checkbox_spare==true){
+        data.checkbox_none = false;
+        data.checkbox_cache = false;
+        data.checkbox_log = false;
+        }else{
+            data.checkbox_none = true;
+            data.checkbox_cache = false;
+            data.check_log = false;
+        }
      }
 
    },
@@ -373,6 +422,8 @@ export default {
 
      }
      */
+     /**监控copydisks 中的数据 */
+
    }
 
 }
