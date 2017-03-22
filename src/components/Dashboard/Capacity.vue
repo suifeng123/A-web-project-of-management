@@ -1,6 +1,8 @@
 <template>
     <div class="maindiv">
        <h3>系统容量的趋势</h3>
+       <h3>系统容量的趋势</h3>
+       <h3>系统容量的趋势</h3>
     </div>
 </template>
 <style scoped>
