@@ -1,7 +1,6 @@
 <template>
     <div class="maindiv">
         <h3>这是监控带宽的表格</h3>
-        <h3>helloworld</h3>
     </div>
 </template>
 <style scoped>
