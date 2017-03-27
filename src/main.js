@@ -22,6 +22,8 @@ import VueResource from 'vue-resource'
 //import Vuevalidator from 'vue-validator'  此表单验证插件由于版本不兼容，故不能使用
 //import Vuerify from 'v-vuerify-next'
 import vueForm from 'vue-form'
+//引入d3
+import * as d3 from 'd3'
 //引入组件
 import Home from './components/Home'
 import DashBoard from './components/Dashboard'
@@ -40,6 +42,7 @@ Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.use(vueForm)
+
 //Vue.use(Vuevalidator)   版本不兼容，所以抛弃vue-validator
 
 const routes = [
