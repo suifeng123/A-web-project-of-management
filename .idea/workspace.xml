@@ -5,16 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/ActionPool/ActionCreate.vue" line="13" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dashboard/System.vue" afterPath="$PROJECT_DIR$/src/components/Dashboard/System.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Leftbar.vue" afterPath="$PROJECT_DIR$/src/components/Leftbar.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pool.vue" afterPath="$PROJECT_DIR$/src/components/Pool.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PoolPart/Disk.vue" afterPath="$PROJECT_DIR$/src/components/PoolPart/Disk.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Storage/Chi.vue" afterPath="$PROJECT_DIR$/src/components/Storage/Chi.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Storage/Dataset.vue" afterPath="$PROJECT_DIR$/src/components/Storage/Dataset.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-    </list>
+    <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -464,12 +455,12 @@
       <workItem from="1490592623601" duration="7982000" />
       <workItem from="1490678192933" duration="4124000" />
       <workItem from="1490867383406" duration="1024000" />
-      <workItem from="1491541345651" duration="8825000" />
+      <workItem from="1491541345651" duration="9322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52772000" />
+    <option name="totallyTimeSpent" value="53269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
