@@ -157,6 +157,9 @@ overflow:hidden;
   left:140px;
   top:220px;
 }
+a{
+  text-decoration:none;
+}
 .img2 {
   position:relative;
   margin-right:15px;

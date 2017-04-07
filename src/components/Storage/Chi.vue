@@ -1,16 +1,23 @@
 <template>
+<div>
+  <MyHeader></MyHeader>
+  <Leftbar></Leftbar>
 <div class="maindiv">
   <div>
   <!--增加路由-->
   <a v-bind:class="{'on':onView1.flag}" href="javascript:;" @click="toggleText(tab01Text),change(onView1)">{{tabNames[0]['tab01Name']}}</a>
-  <a v-bind:class="{'on':onView2.flag}" href="javascript:;" @click="toggleText(tab02Text),change(onView2)">{{tabNames[1]['tab02Name']}}</a>
-  <a v-bind:class="{'on':onView3.flag}" href="javascript:;" @click="toggleText(tab03Text),change(onView3)">{{tabNames[2]['tab03Name']}}</a>
+    <router-link to="/storage/chi/disk">
+    <a v-bind:class="{'on':onView2.flag}" href="javascript:;" @click="toggleText(tab02Text),change(onView2)">{{tabNames[1]['tab02Name']}}</a>
+    </router-link>
+      <a v-bind:class="{'on':onView3.flag}" href="javascript:;" @click="toggleText(tab03Text),change(onView3)">{{tabNames[2]['tab03Name']}}</a>
   <a v-bind:class="{'on':onView4.flag}" href="javascript:;" @click="toggleText(tab04Text),change(onView4)">{{tabNames[3]['tab04Name']}}</a>
   <!-- 增加路由 -->
   </div>
-  <div>
+  <CreatePool v-show="flag2"></CreatePool>
+  <div v-show="flag">
     <component :is='currentView' keep-alive></component>
   </div>
+</div>
 </div>
 </template>
 <style scoped>
@@ -49,6 +56,8 @@ import CreatePool from '../PoolPart/MakePool'
 import Disk from '../PoolPart/Disk'
 import Snapshot from '../PoolPart/Snapshot'
 import Replication from '../PoolPart/Replication'
+import MyHeader from '../Header'
+import Leftbar from '../Leftbar'
 
 
 export default {
@@ -65,7 +74,9 @@ export default {
          tab02Text:'Disk',
          tab03Text:'Snapshot',
          tab04Text:'Replication',
-         currentView:'CreatePool'
+         currentView:'CreatePool',
+         flag:false,
+         flag:true
          }
      },
      created: function(){
@@ -75,11 +86,15 @@ export default {
        CreatePool,
        Disk,
        Snapshot,
-       Replication
+       Replication,
+       MyHeader,
+       Leftbar
      },
      methods: {
        toggleText: function(tabText){
           this.currentView = tabText;
+          this.flag2 = false;
+          this.flag = true;
        },
        tab: function(on,on_copy){
           if(on==on_copy){

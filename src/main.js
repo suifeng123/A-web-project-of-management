@@ -28,10 +28,15 @@ import * as d3 from 'd3'
 import Home from './components/Home'
 import DashBoard from './components/Dashboard'
 import Storage from './components/Pool'
+import Chi from './components/Storage/Chi'
+import Dataset from './components/Storage/Dataset'
+import Disk from './components/PoolPart/Disk'
 import ActionCreatePool from './components/ActionPool/ActionCreate'
 import PoolStatus from './components/ActionPool/Status'
 import EditPool from './components/ActionPool/EditPool'
 import ExpersionPool from './components/ActionPool/ExpansionPool'
+//引入系统的组件
+import System from './components/System/System'
 
 
 
@@ -54,7 +59,12 @@ const routes = [
   {
     path: '/storage/chi',
     name: 'Chi',
-    component: Storage
+    component: Chi
+  },
+  {
+   path: '/storage/chi/disk',
+    name:'Disk',
+    component:Disk
   },
   {
     path: '/storage/chi/ActionCreatePool',
@@ -79,7 +89,7 @@ const routes = [
   {
     path: '/storage/dataset',
     name: 'Dataset',
-    component: Storage
+    component: Dataset
   },
   {
     path: '/storage/volume',
@@ -96,6 +106,12 @@ const routes = [
     name: 'Main',
     component: DashBoard
   },
+  //此处添加子的
+  {
+    path: '/system',
+    name: System,
+    component: System
+  }
 
 
 

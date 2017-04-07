@@ -4,45 +4,9 @@
     <MyHeader></MyHeader>
     <Leftbar></Leftbar>
     <div>
-       <!--<ul style="margin-top:-23px;">-->
-         <!--&lt;!&ndash;增加路由&ndash;&gt;-->
-
-           <!--<li style="display:inline-block;"><a href="javascript:;" @click="changeTab"><button class="btn btn-success btn-lg">{{tab01Name}}</button></a></li>-->
-         <!--<li style="display:inline-block;"><a href="javascript:;" @click="changeTab"><button class="btn btn-success btn-lg">{{tab02Name}}</button></a></li>-->
-         <!--<li style="display:inline-block;"><a href="javascript:;" @click="changeTab"><button class="btn btn-success btn-lg">{{tab03Name}}</button></a></li>-->
-         <!--<li style="display:inline-block;"><a href="javascript:;" @click="changeTab"><button class="btn btn-success btn-lg">{{tab04Name}}</button></a></li>-->
-         <!--&lt;!&ndash; 增加路由 &ndash;&gt;-->
-       <!--</ul>-->
-    </div>
-    <div>
       <component :is='currentView'></component>
 
     </div>
-
-
-    <!--<ul style="margin-top:-20px;">
-      <li style="display:inline">
-        <router-link to='/chi'>
-        <button class="btn btn-lg btn-default">存储池</button>
-        </router-link>
-      </li>
-      <li style="display:inline;margin-left:-6px;">
-        <router-link to='/dataset'>
-        <button class="btn btn-lg btn-default">文件系统</button>
-        </router-link>
-      </li>
-      <li style="display:inline;margin-left:-6px;">
-        <router-link to='/volume'>
-        <button  class="btn btn-lg btn-default">卷</button>
-        </router-link>
-      </li>
-      <li style="display:inline;margin-left:-6px;">
-        <router-link to='/virtual'>
-        <button class="btn btn-lg btn-default">虚拟化</button>
-        </router-link>
-      </li>
-    </ul>
-    -->
 
   </div>
 </template>
