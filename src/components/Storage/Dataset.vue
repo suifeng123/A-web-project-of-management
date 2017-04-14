@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MyHeader flag2="flag2_open"></MyHeader>
+    <MyHeader></MyHeader>
     <Leftbar></Leftbar>
    <div class="maindiv">
      <a v-bind:class="{'on':onView1.flag}" href="javascript:;" @click="change(onView1)">{{tabNames[0]['tab01Name']}}</a>

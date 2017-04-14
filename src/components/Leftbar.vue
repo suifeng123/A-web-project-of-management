@@ -210,7 +210,7 @@ import { mapGetters,mapActions } from 'vuex'
        flag3: false,
        flag4: false,
        flag5: false,
-       flag2: "",
+       flag2: false,
        ff: 'hh',
        system:{flag:true},
        system_copy:{flag:false},
@@ -224,7 +224,6 @@ import { mapGetters,mapActions } from 'vuex'
        other_copy:{flag:false}
        }
      },
-     props: ['flag2'],
      created: function() {
         console.log(this.flag2);
      },

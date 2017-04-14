@@ -16,7 +16,12 @@ const state = {
   active_vitual: false,
   current_storage:'Chi',
   notes: [],
-  activeNote: {}
+  activeNote: {},
+  left_flag1: false,
+  left_flag2: false,
+  left_flag3: false,
+  left_flag4: false,
+  left_flag5: false
 }
 
 // 创建一个对象存储一系列我们接下来要写的 mutation 函数
