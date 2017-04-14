@@ -52,8 +52,8 @@
       <file leaf-file-name="Disk.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/PoolPart/Disk.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="87" column="14" lean-forward="false" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+            <state relative-caret-position="460">
+              <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="false" />
               </folding>
@@ -322,12 +322,12 @@
       <workItem from="1490867383406" duration="1024000" />
       <workItem from="1491541345651" duration="9322000" />
       <workItem from="1492047385807" duration="1290000" />
-      <workItem from="1492150232295" duration="10284000" />
+      <workItem from="1492150232295" duration="10441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64843000" />
+    <option name="totallyTimeSpent" value="65000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -783,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/Disk.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="87" column="14" lean-forward="false" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        <state relative-caret-position="460">
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#!!top" expanded="false" />
           </folding>

@@ -84,7 +84,6 @@ export default {
     components: {
       MyHeader,
       Leftbar,
-      Disk,
       Disklist
     },
     methods: {
