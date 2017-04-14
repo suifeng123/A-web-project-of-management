@@ -1,9 +1,13 @@
 <template>
+  <div>
+    <MyHeader flag2="flag2_open"></MyHeader>
+    <Leftbar></Leftbar>
    <div class="maindiv">
      <a v-bind:class="{'on':onView1.flag}" href="javascript:;" @click="change(onView1)">{{tabNames[0]['tab01Name']}}</a>
      <a v-bind:class="{'on':onView2.flag}" href="javascript:;" @click="change(onView2)">{{tabNames[1]['tab02Name']}}</a>
 
    </div>
+  </div>
 
 
 </template>
@@ -39,6 +43,8 @@ a:hover{
 		}
 </style>
 <script>
+import MyHeader from '../Header'
+import Leftbar from '../Leftbar'
 
 export default {
    data () {
@@ -47,8 +53,16 @@ export default {
          ],
          onView1:{flag:true},
          onView2:{flag:false},
-         currentView:'CreatePool'
+         currentView:'CreatePool',
+         flag2_open: true
      }
+   },
+   components:{
+     MyHeader,
+     Leftbar,
+   },
+   created: function(){
+      console.log(this.flag2_open);
    },
    methods: {
       tab: function(on,on_copy){

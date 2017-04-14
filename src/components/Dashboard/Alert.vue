@@ -1,7 +1,6 @@
 <template>
     <div class="maindiv">
      <h3>杩欎釜鏄鍛婄殑閮ㄥ垎</h3>
-     <h1>这个是告警的页面</h1>
     </div>
 </template>
 <style scoped>

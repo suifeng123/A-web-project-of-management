@@ -93,9 +93,7 @@
         </tr>
         </tfoot>
       </table>
-      <router-link to="/storage/chi/disk">
-        <span>实验</span>
-      </router-link>
+
 
     </div>
 </template>

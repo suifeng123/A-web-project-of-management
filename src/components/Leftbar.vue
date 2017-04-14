@@ -207,10 +207,10 @@ import { mapGetters,mapActions } from 'vuex'
      data() {
      return{
        flag1: false,
-       flag2: false,
        flag3: false,
        flag4: false,
        flag5: false,
+       flag2: "",
        ff: 'hh',
        system:{flag:true},
        system_copy:{flag:false},
@@ -223,6 +223,10 @@ import { mapGetters,mapActions } from 'vuex'
        other:{flag:true},
        other_copy:{flag:false}
        }
+     },
+     props: ['flag2'],
+     created: function() {
+        console.log(this.flag2);
      },
      methods: {
         ...mapActions([
