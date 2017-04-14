@@ -27,6 +27,14 @@ const state = {
 // 创建一个对象存储一系列我们接下来要写的 mutation 函数
 const mutations = {
   // TODO 放置我们的状态变更函数
+  //TODO 用于变更总的左侧导航栏的状态
+  changeleft_falg1 (state) {
+    if(state.left_flag1 == false){
+        state.left_flag1 = true
+    }else{
+      state.left_flag1 = false
+    }
+  },
   increment (state, amount) {
     console.log("你是橱窗里的模特");
     state.count = state.count + amount

@@ -14,7 +14,7 @@
           <img v-if="system.flag" src="./images/left/select_xl01.png">
           <img v-if="system_copy.flag"  src="./images/left/select_xl.png"></span>
           <!--实现二级标题-->
-          <ul v-show='flag1'>
+          <ul v-show='getLeftflag1'>
                <li>
                  <span>设备信息</span>
                </li>
@@ -227,6 +227,11 @@ import { mapGetters,mapActions } from 'vuex'
      created: function() {
         console.log(this.flag2);
      },
+    computed: {
+      ...mapGetters([
+         'getLeftflag1',
+      ]),
+    },
      methods: {
         ...mapActions([
            'changeTab'

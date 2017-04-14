@@ -3,6 +3,10 @@
  * 在 ES6 里你可以这样写
  * export const getCount = state => state.count
  */
+// TODO 去获取所需要的状态
+
+const getLeftflag1 = state => state.left_flag1
+
 const getCount = state => state.count
 
 const notes = state => state.notes
@@ -23,5 +27,5 @@ const get_currentstorage = state => state.current_storage
 
 export { getCount, notes, activeNote, activeNoteText,
          active_chi,active_dataset,active_volume,active_vitual,
-         get_currentstorage
+         get_currentstorage,getLeftflag1
 }
