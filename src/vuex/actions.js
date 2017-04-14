@@ -11,6 +11,26 @@ const updateMessage = ({ commit, state }, e) => {
   commit('updateMessage', e.target.value)
 }
 
+const  changeLeft1 = ({ commit,state}) => {
+   commit('changeleft_flag1')
+}
+
+const  changeLeft2 = ({ commit,state}) => {
+  commit('changeleft_flag2')
+}
+
+const  changeLeft3 = ({ commit,state}) => {
+  commit('changeleft_flag3')
+}
+
+const  changeLeft4 = ({ commit,state}) => {
+  commit('changeleft_flag4')
+}
+
+const  changeLeft5 = ({ commit,state}) => {
+  commit('changeleft_flag5')
+}
+
 const decrement = ({ commit, state }) => {
   commit('decrement', 1)
 }
@@ -41,7 +61,7 @@ const changeTab = ({ commit,state }, e) => {
 }
 
 export { increment, updateMessage, decrement, addNote, editNote, deleteNote, updateActiveNote, toggleFavorite,
-         changeTab
+         changeTab,changeLeft1,changeLeft2,changeLeft3,changeLeft4,changeLeft5
 
 
 }

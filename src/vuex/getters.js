@@ -7,6 +7,14 @@
 
 const getLeftflag1 = state => state.left_flag1
 
+const  getLeftflag2 = state => state.left_flag2
+
+const getLeftflag3 = state => state.left_flag3
+
+const getLeftflag4 = state => state.left_flag4
+
+const getLeftflag5 = state => state.left_flag5
+
 const getCount = state => state.count
 
 const notes = state => state.notes
@@ -27,5 +35,6 @@ const get_currentstorage = state => state.current_storage
 
 export { getCount, notes, activeNote, activeNoteText,
          active_chi,active_dataset,active_volume,active_vitual,
-         get_currentstorage,getLeftflag1
+         get_currentstorage,getLeftflag1,getLeftflag2,getLeftflag3,
+         getLeftflag4,getLeftflag5
 }

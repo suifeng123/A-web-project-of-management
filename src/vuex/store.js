@@ -28,11 +28,39 @@ const state = {
 const mutations = {
   // TODO 放置我们的状态变更函数
   //TODO 用于变更总的左侧导航栏的状态
-  changeleft_falg1 (state) {
+  changeleft_flag1 (state) {
     if(state.left_flag1 == false){
         state.left_flag1 = true
     }else{
       state.left_flag1 = false
+    }
+  },
+  changeleft_flag2 (state) {
+    if(state.left_flag2 == false){
+      state.left_flag2 = true
+    }else{
+      state.left_flag2 = false
+    }
+  },
+  changeleft_flag3 (state) {
+    if(state.left_flag3 == false){
+      state.left_flag3 = true
+    }else{
+      state.left_flag3 = false
+    }
+  },
+  changeleft_flag4 (state) {
+    if(state.left_flag4 == false){
+      state.left_flag4 = true
+    }else{
+      state.left_flag4 = false
+    }
+  },
+  changeleft_flag5 (state) {
+    if(state.left_flag5 == false){
+      state.left_flag5 = true
+    }else{
+      state.left_flag5 = false
     }
   },
   increment (state, amount) {
@@ -90,6 +118,7 @@ const mutations = {
     state.activeNote = note
   },
   CHANGE_TAB_STORAGE (state,text){
+      console.log("你好吗");
        if(text == "存储池"){
          state.current_storage = 'Chi';
        }else if(text == "文件系统"){

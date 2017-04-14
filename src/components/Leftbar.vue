@@ -10,7 +10,7 @@
         </li>
         <li>
 
-          <span @click="openurl1()"><img class="img1" src="./images/left/syetem_management_c.png">系统
+          <span @click="changeLeft1();change()"><img class="img1" src="./images/left/syetem_management_c.png">系统
           <img v-if="system.flag" src="./images/left/select_xl01.png">
           <img v-if="system_copy.flag"  src="./images/left/select_xl.png"></span>
           <!--实现二级标题-->
@@ -30,11 +30,11 @@
           </ul>
         </li>
         <li>
-          <span @click="openurl2()"><img class="img2"  src="./images/left/statistics_current.png">存储服务
+          <span @click="changeLeft2();openurl2()"><img class="img2"  src="./images/left/statistics_current.png">存储服务
             <img v-if="cunchu.flag" src="./images/left/select_xl01.png">
             <img v-if="cunchu_copy.flag" src="./images/left/select_xl.png">
             </span>
-          <ul v-show="flag2">
+          <ul v-show="getLeftflag2">
               <li @click="changeTab">
                 <router-link to="/storage/chi">
                 <span>存储池</span>
@@ -58,11 +58,11 @@
           </ul>
         </li>
         <li>
-          <span @click="openurl3()"><img class="img1" src="./images/left/source_current.png">访问
+          <span @click="changeLeft3();openurl3()"><img class="img1" src="./images/left/source_current.png">访问
           <img v-if="fangwen.flag" src="./images/left/select_xl01.png">
           <img v-if="fangwen_copy.flag" src="./images/left/select_xl.png">
           </span>
-          <ul v-show="flag3">
+          <ul v-show="getLeftflag3">
              <li>
                 <span>主机</span>
             </li>
@@ -75,11 +75,11 @@
           </ul>
         </li>
         <li>
-          <span @click="openurl4()"><img class="img2" src="./images/left/cloud_current.png">数据保护
+          <span @click="changeLeft4();openurl4()"><img class="img2" src="./images/left/cloud_current.png">数据保护
           <img v-if="shuju.flag" src="./images/left/select_xl01.png">
           <img v-if="shuju_copy.flag" src="./images/left/select_xl.png">
           </span>
-          <ul v-show="flag4">
+          <ul v-show="getLeftflag4">
             <li>
               <span>快照</span>
             </li>
@@ -89,12 +89,12 @@
           </ul>
         </li>
         <li>
-          <span @click="openurl5()"><img class="img1" src="./images/left/custom_current.png">其他
+          <span @click="changeLeft5();openurl5()"><img class="img1" src="./images/left/custom_current.png">其他
           <img v-if="other.flag" src="./images/left/select_xl01.png">
           <img v-if="other_copy.flag" src="./images/left/select_xl.png">
 
           </span>
-          <ul v-show="flag5">
+          <ul v-show="getLeftflag5">
             <li>
                 <span>升级</span>
             </li>
@@ -206,11 +206,6 @@ import { mapGetters,mapActions } from 'vuex'
   export default {
      data() {
      return{
-       flag1: false,
-       flag3: false,
-       flag4: false,
-       flag5: false,
-       flag2: false,
        ff: 'hh',
        system:{flag:true},
        system_copy:{flag:false},
@@ -230,71 +225,47 @@ import { mapGetters,mapActions } from 'vuex'
     computed: {
       ...mapGetters([
          'getLeftflag1',
+         'getLeftflag2',
+         'getLeftflag3',
+         'getLeftflag4',
+         'getLeftflag5'
       ]),
     },
      methods: {
         ...mapActions([
-           'changeTab'
+           'changeTab',
+           'changeLeft1',
+           'changeLeft2',
+           'changeLeft3',
+           'changeLeft4',
+           'changeLeft5'
         ]),
        changeImg: function(temp,temp_copy){
         if(temp.flag==true){
-        console.log("1");
           temp.flag = false;
           temp_copy.flag= true;
 
         }else{
-        console.log("2");
           temp.flag = true;
           temp_copy.flag = false;
         }
 
        },
-        openurl1: function(){
-             if(this.flag1==true){
-                console.log("3");
-                this.flag1 = false;
-                this.changeImg(this.system,this.system_copy);
-
-             }else{
-               console.log("4");
-                this.flag1 = true;
-               this.changeImg(this.system,this.system_copy);
-             }
+        change: function(){
+            console.log("进行更换图片的操作");
+             this.changeImg(this.system,this.system_copy);
         },
         openurl2: function(){
-           if(this.flag2==true){
-               this.flag2 = false;
                this.changeImg(this.cunchu,this.cunchu_copy);
-           }else{
-               this.flag2 = true;
-               this.changeImg(this.cunchu,this.cunchu_copy); //此处为对象的引用传递，传递的是对象的地址
-           }
         },
         openurl3: function(){
-            if(this.flag3 == true){
-                this.flag3 = false;
                 this.changeImg(this.fangwen,this.fangwen_copy);
-            }else{
-
-              this.flag3 = true;
-              this.changeImg(this.shuju,this.shuju_copy);
-            }
         },
         openurl4: function(){
-            if(this.flag4 == true){
-                 this.flag4 = false;
-                 this.changeImg(this.other,this.other_copy);
-            }else{
-               this.flag4 = true;
-               this.changeImg(this.other,this.other_copy);
-            }
+                 this.changeImg(this.shuju,this.shuju_copy);
         },
         openurl5: function(){
-            if(this.flag5 == true){
-                 this.flag5 = false;
-            }else{
-               this.flag5 = true;
-            }
+                 this.changeImg(this.other,this.other_copy);
         },
         test: function(){
 
