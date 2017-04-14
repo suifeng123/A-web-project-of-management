@@ -3,8 +3,10 @@
     <MyHeader></MyHeader>
     <Leftbar></Leftbar>
     <div class="maindiv">
+      <router-link to="/storage/chi">
       <a v-bind:class="{'on':onView1.flag}" href="javascript:;" @click="toggleText(tab01Text),change(onView1)">{{tabNames[0]['tab01Name']}}</a>
-      <router-link to="/storage/chi/disk">
+      </router-link>
+        <router-link to="/storage/chi/disk">
         <a v-bind:class="{'on':onView2.flag}" href="javascript:;" @click="toggleText(tab02Text),change(onView2)">{{tabNames[1]['tab02Name']}}</a>
       </router-link>
       <a v-bind:class="{'on':onView3.flag}" href="javascript:;" @click="toggleText(tab03Text),change(onView3)">{{tabNames[2]['tab03Name']}}</a>
@@ -52,10 +54,9 @@ a:hover{
 
 </style>
 <script>
-
-import Disk from '../PoolPart/Disk'
-import Snapshot from '../PoolPart/Snapshot'
-import Replication from '../PoolPart/Replication'
+import Disklist from './DiskList'
+import Snapshot from './Snapshot'
+import Replication from './Replication'
 import MyHeader from '../Header'
 import Leftbar from '../Leftbar'
 
@@ -74,7 +75,7 @@ export default {
          tab02Text:'Disk',
          tab03Text:'Snapshot',
          tab04Text:'Replication',
-         currentView:'CreatePool',
+         currentView:'Disklist',
          flag:false,
          flag2:true
          }
@@ -83,7 +84,8 @@ export default {
     components: {
       MyHeader,
       Leftbar,
-      Disk
+      Disk,
+      Disklist
     },
     methods: {
        toggleText: function(tabText){
