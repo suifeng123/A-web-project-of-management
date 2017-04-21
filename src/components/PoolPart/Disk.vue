@@ -67,8 +67,8 @@ export default {
          tabNames:[{tab01Name:'存储池'},{tab02Name:'磁盘'},
            {tab03Name:'快照'},{tab04Name:'远程复制'}
          ],
-         onView1:{flag:true},
-         onView2:{flag:false},
+         onView1:{flag:false},
+         onView2:{flag:true},
          onView3:{flag:false},
          onView4:{flag:false},
          tab01Text:'CreatePool',
@@ -76,7 +76,7 @@ export default {
          tab03Text:'Snapshot',
          tab04Text:'Replication',
          currentView:'Disklist',
-         flag:false,
+         flag:true,
          flag2:true
          }
 
