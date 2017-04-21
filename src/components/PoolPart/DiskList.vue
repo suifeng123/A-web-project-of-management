@@ -12,6 +12,11 @@
         <input type="text" v-model="contentSelect" style="width:100px;" />
         <button class="btn btn-sm btn-success">搜索</button>
         <button class="btn btn-sm btn-success">刷新</button>
+        <select required v-model="initial">
+           <option v-for="action in actions">
+               {{action}}
+           </option>
+        </select>
       </div>
     </div>
 </template>
@@ -36,6 +41,8 @@ export default {
         selected: "名称搜索",
         options:['名称搜索','状态搜索'],
         contentSelect: "",
+        initial: '--更过操作--',
+        actions: ['--更多操作--','擦除','修改'],
     }
    },
 
