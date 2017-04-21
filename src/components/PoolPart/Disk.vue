@@ -22,7 +22,7 @@
 </template>
 <style scoped>
   .maindiv {
-     position:absolute;
+   position:absolute;
   left:180px;
   top:60px;
   right:0px;
