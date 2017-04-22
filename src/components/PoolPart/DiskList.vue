@@ -35,6 +35,7 @@
 }
 </style>
 <script>
+//这里是Vue的js操作
 export default {
    data()  {
     return {
@@ -43,6 +44,8 @@ export default {
         contentSelect: "",
         initial: '--更过操作--',
         actions: ['--更多操作--','擦除','修改'],
+        flag:true,
+        flag_copy:false
     }
    },
 
