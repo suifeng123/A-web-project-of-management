@@ -18,6 +18,29 @@
            </option>
         </select>
       </div>
+<!-- 下面是table表格 ----->
+      <div class="tablediv">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th><label><input type="checkbox" /> </label></th>
+            <th>名称</th>
+            <th>磁盘大小</th>
+            <th>所属存储池</th>
+            <th>定位等状态</th>
+            <th>健康状态</th>
+            <th>磁盘角色</th>
+            <th>介质类型</th>
+            <th>是否加密</th>
+            <th>擦除状态</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      </div>
+      <!---上面是table表格 ---->
     </div>
 </template>
 <style scoped>
@@ -33,6 +56,9 @@
   font-size: 25px;
 
 }
+.tablediv {
+   margin-right:20px;
+}
 </style>
 <script>
 //这里是Vue的js操作
@@ -42,10 +68,14 @@ export default {
         selected: "名称搜索",
         options:['名称搜索','状态搜索'],
         contentSelect: "",
-        initial: '--更过操作--',
-        actions: ['--更多操作--','擦除','修改'],
+        actions: ['---更多操作---','擦除','修改'],
+        initial: '---更多操作---',
         flag:true,
-        flag_copy:false
+        flag_copy:false,
+        DataPool:[],
+        DataPoolcopy:[],
+        DataTotal:[],
+        DataTotalcopy:[],
     }
    },
 

@@ -44,8 +44,17 @@ export default {
    mounted: function(){
    /*
        this.$http.post('/hikcmd/global/disks/',{
-         id:'4',
-         name:'disk4'
+         id:'12',
+         name:'CTL0.12',
+         size: '40G',
+         config_pool:'pool4',
+         locate_status:'open',
+         healthy:'OK',
+         role: 'free',
+         media_type:'HDD',
+         entry:'yes',
+         wipe_status:'normal'
+
        }).then(res=>{
           console.log("添加磁盘成功了")
        },res => {

@@ -373,15 +373,13 @@ export default {
              // TODO 进行重新获取存储池状态的操作
 
               this.$http.get('/hikcmd/global/pool/').then(successData => {
-                  console.log("上帝請賜予我數據：")
-                  console.log(successData.body);
+
                   var newTable = []; //定义一个新的数组
                   var comData = successData.body;
-                  console.log("人生如梦");
+
                   for(var key in comData){
                     newTable.push(comData[key]);
                   }
-                  console.log(newTable);
 
                   this.DataPool= newTable;
                   this.DataTotal = newTable;
@@ -404,11 +402,10 @@ export default {
      //获取数据
 
       this.$http.get('/hikcmd/global/pool/').then(successData => {
-                  console.log("上帝請賜予我數據：")
-                  console.log(successData.body);
+
                   var newTable = []; //定义一个新的数组
                   var comData = successData.body;
-                  console.log("人生如梦");
+
                   for(var key in comData){
                     newTable.push(comData[key]);
                   }
@@ -421,7 +418,7 @@ export default {
          //在数据未加载之前，先进行获取页数的操作
          this.getPages();
          this.getData();
-         console.log("上帝，數據獲取完畢");
+
 
          },failData => {
           console.log("靠，又他妈帅了"+failData);
