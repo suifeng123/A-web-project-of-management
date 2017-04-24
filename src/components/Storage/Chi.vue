@@ -76,7 +76,7 @@ export default {
          tab04Text:'Replication',
          currentView:'CreatePool',
          flag:false,
-         flag:true
+         flag2:true
          }
      },
      created: function(){
