@@ -48,11 +48,7 @@ export default {
         flag_copy:false
     }
    },
-   methods: {
-   },
-   created: {
-   },
-   wathch: {}
+
 
 
 
