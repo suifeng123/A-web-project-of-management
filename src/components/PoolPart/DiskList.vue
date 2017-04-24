@@ -23,11 +23,11 @@
       <table class="table table-hover table-bordered">
         <thead>
           <tr>
-            <th><label><input type="checkbox" /> </label></th>
+            <th style="20px;"><label style="width:10px;"><input type="checkbox"  /> </label></th>
             <th>名称</th>
             <th>磁盘大小</th>
             <th>所属存储池</th>
-            <th>定位等状态</th>
+            <th>定位灯状态</th>
             <th>健康状态</th>
             <th>磁盘角色</th>
             <th>介质类型</th>
@@ -36,9 +36,27 @@
           </tr>
         </thead>
         <tbody>
-
+            <tr v-for="data in DataPool">
+              <td><label><input type="checkbox" /></label></td>
+              <td v-text="data.name"></td>
+              <td v-text="data.size"></td>
+              <td v-text="data.config_pool"></td>
+              <td v-text="data.locate_status"></td>
+              <td v-text="data.healthy"></td>
+              <td v-text="data.role"></td>
+              <td v-text="data.media_type"></td>
+              <td v-text="data.entry"></td>
+              <td v-text="data.wipe_status"></td>
+            </tr>
         </tbody>
+     <tr>
+       <td>
+       <td><div style="position:relative;float:right;width:100px;height:40px;background:blue;"></td>
+     </tr>
       </table>
+        <!--下面是tfoot的部分 -->
+        <!--上面是tfoot的部分 --->
+
       </div>
       <!---上面是table表格 ---->
     </div>
@@ -49,8 +67,8 @@
   top:50px;
   bottom:0;
   left:20px;
-  overflow:auto;
   right:0;
+  overflow:auto;
 }
 .secondDiv {
   font-size: 25px;
@@ -71,15 +89,35 @@ export default {
         actions: ['---更多操作---','擦除','修改'],
         initial: '---更多操作---',
         flag:true,
+        len: 5,
         flag_copy:false,
         DataPool:[],
         DataPoolcopy:[],
         DataTotal:[],
         DataTotalcopy:[],
+        lens:[5,10,20]
     }
    },
 
+ created: function() {
+  //获取数据
+    this.$http.get('/hikcmd/global/disks/').then(successData=>{
+          var newTable = [];
+          var  comData = successData.body;
+        console.log(comData[1]['media_type']);
+          for(var key in comData){
+            newTable.push(comData[key]);
 
+          }
+
+          this.DataPool = newTable;
+
+
+    },failData => {
+        console.log("获取数据失败:"+failData);
+    })
+
+ }
 
 
 }

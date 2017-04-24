@@ -39,7 +39,7 @@
         <tbody>
 
         <tr v-for="data in DataPool">
-          <td><label width="10px"><input type="checkbox" v-model="data.checkbox" value="data.checkbox"/><i></i> </label></td>
+          <td><label><input type="checkbox" v-model="data.checkbox" value="data.checkbox"/><i></i> </label></td>
           <td  v-text="data.name"></td>
           <td  v-text="data.config_controller"></td>
           <td  v-text="data.run_controller"></td>
@@ -93,9 +93,9 @@
         </tr>
         </tfoot>
       </table>
-      <router-link to="/storage/chi/disk">
-        <span>实验</span>
-      </router-link>
+      <!--<router-link to="/storage/chi/disk">-->
+        <!--<span>实验</span>-->
+      <!--</router-link>-->
 
     </div>
 </template>
@@ -409,15 +409,15 @@ export default {
                   for(var key in comData){
                     newTable.push(comData[key]);
                   }
-                  console.log(newTable);
+
 
                   this.DataPool= newTable;
 
                   this.DataTotal = newTable;
                   this.DataTotalcopy = newTable;//add by 王圣文
-         //在数据未加载之前，先进行获取页数的操作
-         this.getPages();
-         this.getData();
+                  //在数据未加载之前，先进行获取页数的操作
+                this.getPages();
+                 this.getData();
 
 
          },failData => {
