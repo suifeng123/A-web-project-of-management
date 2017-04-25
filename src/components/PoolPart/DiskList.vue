@@ -50,8 +50,13 @@
             </tr>
         </tbody>
      <tr>
-       <td>
-       <td><div style="position:relative;float:right;width:100px;height:40px;background:blue;"></td>
+       <td  colspan="30">
+              <div>
+                <select class="form-control boot-select" v-model="len">
+                  <option v-for="arr in lens" :value="arr" v-text="arr"></option>
+                </select>
+              </div>
+       </td>
      </tr>
       </table>
         <!--下面是tfoot的部分 -->
@@ -74,11 +79,22 @@
   font-size: 25px;
 
 }
+.footdiv {
+  position:relative;
+  float:right;
+  width:80px;
+
+}
 .tablediv {
    margin-right:20px;
 }
+.boot-select{
+  float: right;
+   width: 80px;
+}
 </style>
 <script>
+
 //这里是Vue的js操作
 export default {
    data()  {
@@ -95,7 +111,8 @@ export default {
         DataPoolcopy:[],
         DataTotal:[],
         DataTotalcopy:[],
-        lens:[5,10,20]
+        lens:[5,10,20],
+        len: 5,
     }
    },
 
