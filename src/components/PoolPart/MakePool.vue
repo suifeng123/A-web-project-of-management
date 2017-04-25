@@ -59,12 +59,12 @@
                 <ul class="pagination boot-page">
                   <li>
                     <a href="javascript:void(0)" @click="onFirstClick()">
-                      <span style="font-size:15px;color:blue">首页</span>
+                      <span class="footspan">首页</span>
                     </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" aria-label="Next" @click="onPrevClick()">
-                      <span style="font-size:15px;color:blue;">上一页</span>
+                      <span class="footspan">上一页</span>
                     </a>
                   </li>
                   <li v-for="page in pages" :class="activeNum == (page-1)?'active':''">
@@ -72,12 +72,12 @@
                   </li>
                   <li>
                     <a href="javascript:void(0)" aria-label="Next" @click="onNextClick()">
-                      <span style="font-size:15px;color:blue;">下一页</span>
+                      <span class="footspan">下一页</span>
                     </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" aria-label="Next" @click="onLastClick()">
-                      <span style="font-size:15px;color:blue;">末页</span>
+                      <span class="footspan">末页</span>
                     </a>
                   </li>
                 </ul>
@@ -107,6 +107,12 @@
   left:20px;
   overflow:auto;
   right:0;
+}
+
+.footspan {
+font-size:15px;
+color:blue;
+
 }
 .form-control{
    display:inline-block;

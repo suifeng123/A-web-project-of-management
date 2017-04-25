@@ -56,6 +56,14 @@
                 <nav class="boot-nav">
                   <ul class="pagination boot-page">
                     <li>
+                      <a href="#">
+                        <span class="footspan">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         <span class="footspan">上一页</span>
+                       </a>
                     </li>
                   </ul>
                 </nav>
@@ -86,6 +94,10 @@
 .secondDiv {
   font-size: 25px;
 
+}
+.footspan {
+  font-size:15px;
+  color:blue;
 }
 .footdiv {
   position:relative;
