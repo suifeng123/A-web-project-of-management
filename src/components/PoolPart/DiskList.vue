@@ -52,6 +52,14 @@
      <tr>
        <td  colspan="30">
               <div>
+                <!--自己写的一个标题头 -->
+                <nav class="boot-nav">
+                  <ul class="pagination boot-page">
+                    <li>
+                    </li>
+                  </ul>
+                </nav>
+                <!--自己写的一个标题头 -->
                 <select class="form-control boot-select" v-model="len">
                   <option v-for="arr in lens" :value="arr" v-text="arr"></option>
                 </select>
@@ -91,6 +99,14 @@
 .boot-select{
   float: right;
    width: 80px;
+}
+.boot-nav {
+    float: right;
+}
+.boot-page {
+    display: inline-block;
+    margin: 2px 10px 0 20px;
+    vertical-align: middle;
 }
 </style>
 <script>
