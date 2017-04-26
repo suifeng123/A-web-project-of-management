@@ -241,9 +241,10 @@ export default {
                        newPages[i] = this.pages[i]
                     }
                     this.pages = newPages
-                    this.getData()
+
                   }
              }
+             this.getData()
          },
          onPreClick () {
                //获取当前页码是否为最下的页码
@@ -254,8 +255,10 @@ export default {
                          let newPages = []
 
                          for(let i=0; i < this.pages.length;i++){
-
+                             newPages[i] = this.pages[i] -1
                          }
+                         this.pages = newPages
+                         this.getData()
                       }
                }
          }

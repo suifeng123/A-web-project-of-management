@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PoolPart/DiskList.vue" afterPath="$PROJECT_DIR$/src/components/PoolPart/DiskList.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PoolPart/MakePool.vue" afterPath="$PROJECT_DIR$/src/components/PoolPart/MakePool.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +44,8 @@
           <file leaf-file-name="DiskList.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
+                <state relative-caret-position="247">
+                  <caret line="246" column="27" lean-forward="false" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
                   <folding>
                     <element signature="n#style#0;n#!!top" expanded="false" />
                   </folding>
@@ -336,12 +335,12 @@
       <workItem from="1493013637409" duration="2458000" />
       <workItem from="1493016504417" duration="7072000" />
       <workItem from="1493105326988" duration="3154000" />
-      <workItem from="1493183832164" duration="8208000" />
+      <workItem from="1493183832164" duration="8969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99421000" />
+    <option name="totallyTimeSpent" value="100182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="0" width="1382" height="744" extended-state="0" />
@@ -760,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="246" column="27" lean-forward="false" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#!!top" expanded="false" />
           </folding>
