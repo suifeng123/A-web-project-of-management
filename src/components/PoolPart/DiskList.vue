@@ -56,21 +56,21 @@
                 <nav class="boot-nav">
                   <ul class="pagination boot-page">
                     <li>
-                      <a href="#" @click="onFirstClick()">
+                      <a href="javascript:void(0)" @click="onFirstClick()">
                         <span class="footspan">首页</span>
                       </a>
                     </li>
                     <li>
-                       <a href="#">
+                       <a href="javascript:void(0)" @click="">
                          <span class="footspan">上一页</span>
                        </a>
                     </li>
                     <li v-for="page in pages" :class="activeNum == (page-1)?'active':''">
-                      <a href="#" v-text="page" @click="onPageClick(page)">
+                      <a href="javascript:void(0)" v-text="page" @click="onPageClick(page)">
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0)" @click="onNextClick()">
                        <span class="footspan">下一页</span>
                       </a>
                     </li>
@@ -141,6 +141,7 @@
 export default {
    data()  {
     return {
+        activeNum: 0,
         selected: "名称搜索",
         options:['名称搜索','状态搜索'],
         contentSelect: "",
@@ -197,11 +198,49 @@ export default {
                    this.pages.push(i);
                }
           }else{
-
+               for(let i=1;i<this.pageLen;i++){
+                  this.pages.push(i);
+               }
           }
          },
          getData() {
+               let len = this.len; //获取当前的页数
+               let pageNum = this.pages[this.activeNum]-1; //获取当前page[0]的数据
+               let newData = []; //使用当前的数据源
+               //开始想数组中push数据
+               for(let i=pageNum*len;i<(pageNum*len+len);i++){
+                   this.DataTotal[i] !== undefined ? newData.push(this.DataTotal[i]):''
+               }
+               this.DataPool = newData;// 获取我们当前所需要的数据
 
+         },
+         onFirstClick() {
+            if(this.pages[0] == 1){
+                this.activeNum = 0;
+            }else {
+                let originPage = [];
+                for(let i=1;i<= this.pageLen;i++){
+                   originPage.push(i);
+                }
+                this.pages = originPage;
+                this.activeNum === 0?this.getData():this.activeNum=0;
+            }
+         },
+         //点击下一页
+         onNextClick() {
+             //判断当前页是否为最大的页码
+             if(this.activeNum > this.pages.length - 1){
+                  this.activeNum = this.activeNum + 1
+             }else{
+                  if(this.pages[this.pages.length - 1]){
+                      let newPages = []
+                    for(let i=0;i < this.pages.length; i++) {
+                       newPages[i] = this.pages[i] + 1
+                    }
+                    this.pages = newPages
+                    this.getData()
+                  }
+             }
          }
 
  }

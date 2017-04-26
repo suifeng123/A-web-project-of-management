@@ -68,7 +68,7 @@
                     </a>
                   </li>
                   <li v-for="page in pages" :class="activeNum == (page-1)?'active':''">
-                    <a href="#" v-text="page" @click="onPageClick(page)"></a>
+                    <a href="javascript:void(0)" v-text="page" @click="onPageClick(page)"></a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" aria-label="Next" @click="onNextClick()">
@@ -230,13 +230,8 @@ export default {
             console.log("999999"+this.pages);
         },
 
-
         //获取数据
         getData() {
-
-                  //首先确定一下要展示的页数
-                  console.log("-----");
-                  console.log(this.DataTotal)
 
                    let len = this.len; //获取当前的页数
                    let pageNum = this.pages[this.activeNum]-1; //获取当前的page[0]的数据
@@ -248,7 +243,7 @@ export default {
 
                     this.DataPool = newData; //获取我们所需要的数据
                     // this.DataPool = [{"name":"pool21","size":"19.9G","config_controller":"A","run_controller":"A",}]
-                    console.log(this.DataPool);
+
 
 
  },
@@ -311,7 +306,7 @@ export default {
             if (this.activeNum < this.pages.length - 1) {
                 this.activeNum = this.activeNum + 1
             } else {
-                if (this.pages[this.pages.length - 1] < this.pageTotal) {
+                if (this.pages[this.pages.length - 1]) {
                     let newPages = []
 
                     for (let i = 0; i < this.pages.length; i++) {
@@ -384,7 +379,6 @@ export default {
          //在数据未加载之前，先进行获取页数的操作
             this.getPages();
             this.getData();
-            console.log("上帝，數據獲取完畢");
 
          },failData => {
           console.log("靠，又他妈帅了"+failData);
