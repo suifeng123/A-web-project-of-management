@@ -156,7 +156,9 @@ export default {
         lens:[5,10,20],
         len: 5,
         pages:[],
-        active:"active"
+        active:"active",
+        pageTotal:1,
+        pageLen: 5,//当初始化的时候的时候PageLen的长度
     }
    },
 
@@ -187,7 +189,16 @@ export default {
  },
  methods: {
          getPages() {
+          //获取总的页数
+          this.pageTotal = Math.ceil(this.DataTotal.length/this.len);
+          //比较总的页数和当前显示的页数
+          if(this.pageTotal <= this.pageLen){
+               for(let i=1;i<=this.pageTotal;i++){
+                   this.pages.push(i);
+               }
+          }else{
 
+          }
          },
          getData() {
 

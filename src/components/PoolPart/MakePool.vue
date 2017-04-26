@@ -162,15 +162,7 @@ export default {
             tableList:[
             {num:1,author:'刘德华',content:'忘情水',remark:'情歌'},
             {num:2,author:'刘德华',content:'天若有情',remark:'情歌'},
-            {num:3,author:'刘德华',content:'忘情水',remark:'情歌'},
-            {num:4,author:'刘德华',content:'天若有情',remark:'情歌'},
-            {num:5,author:'刘德华',content:'忘情水',remark:'情歌'},
-            {num:6,author:'刘德华',content:'天若有情',remark:'情歌'},
-            {num:7,author:'刘德华',content:'忘情水',remark:'情歌'},
-            {num:8,author:'刘德华',content:'天若有情',remark:'情歌'},
-            {num:9,author:'刘德华',content:'忘情水',remark:'情歌'},
-            {num:10,author:'刘德华',content:'天若有情',remark:'情歌'},
-            {num:11,author:'刘德华',content:'忘情水',remark:'情歌'}
+            {num:3,author:'刘德华',content:'忘情水',remark:'情歌'}
             ],//分页组件传回的分页后的数据
             DataPool:[],
             DataPoolcopy:[],
