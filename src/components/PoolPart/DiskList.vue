@@ -65,6 +65,16 @@
                          <span class="footspan">上一页</span>
                        </a>
                     </li>
+                    <li>
+                      <a href="#">
+                       <span class="footspan">下一页</span>
+                      </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         <span class="footspan">尾页</span>
+                       </a>
+                    </li>
                   </ul>
                 </nav>
                 <!--自己写的一个标题头 -->
