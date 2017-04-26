@@ -61,7 +61,7 @@
                       </a>
                     </li>
                     <li>
-                       <a href="javascript:void(0)" @click="">
+                       <a href="javascript:void(0)" @click="onPreClick()">
                          <span class="footspan">上一页</span>
                        </a>
                     </li>
@@ -75,7 +75,7 @@
                       </a>
                     </li>
                     <li>
-                       <a href="#">
+                       <a href="javascript:void(0)">
                          <span class="footspan">尾页</span>
                        </a>
                     </li>
@@ -228,19 +228,36 @@ export default {
          },
          //点击下一页
          onNextClick() {
+            console.log(this.activeNum);
+            console.log(this.pages);
              //判断当前页是否为最大的页码
-             if(this.activeNum > this.pages.length - 1){
+             if(this.activeNum < this.pages.length - 1){
                   this.activeNum = this.activeNum + 1
              }else{
+
                   if(this.pages[this.pages.length - 1]){
                       let newPages = []
                     for(let i=0;i < this.pages.length; i++) {
-                       newPages[i] = this.pages[i] + 1
+                       newPages[i] = this.pages[i]
                     }
                     this.pages = newPages
                     this.getData()
                   }
              }
+         },
+         onPreClick () {
+               //获取当前页码是否为最下的页码
+               if(this.activeNum > 0){
+                   this.activeNum = this.activeNum - 1;
+               } else {
+                      if(this.pages[0] != 1) {
+                         let newPages = []
+
+                         for(let i=0; i < this.pages.length;i++){
+
+                         }
+                      }
+               }
          }
 
  }

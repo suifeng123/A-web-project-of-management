@@ -312,7 +312,7 @@ export default {
                     for (let i = 0; i < this.pages.length; i++) {
                         newPages[i] = this.pages[i] + 1
                     }
-
+                   console.log(newPages);
                     this.pages = newPages
 
                     this.getData()
