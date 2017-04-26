@@ -75,7 +75,7 @@
                       </a>
                     </li>
                     <li>
-                       <a href="javascript:void(0)">
+                       <a href="javascript:void(0)" @click="onLastClick()">
                          <span class="footspan">尾页</span>
                        </a>
                     </li>
@@ -121,6 +121,7 @@
 }
 .tablediv {
    margin-right:20px;
+   margin-top: 20px;
 }
 .boot-select{
   float: right;
@@ -258,12 +259,56 @@ export default {
                              newPages[i] = this.pages[i] -1
                          }
                          this.pages = newPages
-                         this.getData()
+
                       }
                }
-         }
+               this.getData()
+         },
 
- }
+         //点击跳转到首页
+         onFirstClick () {
+             if(this.pages[0] == 1){
+                  this.activeNum = 0;
+             }else {
+                let originPage = []
+                for(let i=1;i<=this.pageLen;i++){
+                  originPage.push(i)
+                }
+                this.pages = originPage;
+
+             }
+              this.activeNum == 0?this.getData(): this.activeNum = 0;
+
+         },
+         //当鼠标点击尾页的时候出现的情况
+        onLastClick () {
+             if(this.pageTotal <= this.pageLen){
+                 this.activeNum = this.pages.length - 1;
+             }else {
+                let lastPage = []
+                for(let i = this.pageLen - 1;i>=0;i--){
+                   lastPage.push(this.pageTotal - i);
+                }
+                this.pages = lastPage;
+                this.activeNum == this.pages.length-1?this.getData():this.activeNum=this.pages.length-1
+             }
+             this.getData()
+        }
+
+ },
+ //监听事件
+   watch: {
+     //监听数量变化
+     'len' (newVal,oldVal) {
+          console.log("开始监听变化");
+
+           this.getData()
+           this.getPages()
+           if(this.activeNum+1 > this.pages.length){
+              this.activeNum = this.pages.length - 1;
+           }
+     }
+   }
 
 
 }

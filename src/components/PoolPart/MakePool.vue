@@ -3,7 +3,7 @@
       <!--这一段是表格头的位置-->
 
       <div style="display:inline">
-        <h1>存储池实例</h1>
+        <h3>存储池实例</h3>
         <div style="display:inline;">
         <select required v-model="selected">
           <option v-for="option in options">
@@ -25,6 +25,7 @@
       </div>
 
       <!--下面是table表格的格式-->
+      <div class="tablediv">
       <table class="table table-hover table-bordered">
         <thead>
         <tr>
@@ -93,6 +94,7 @@
         </tr>
         </tfoot>
       </table>
+      </div>
       <!--<router-link to="/storage/chi/disk">-->
         <!--<span>实验</span>-->
       <!--</router-link>-->
@@ -108,7 +110,10 @@
   overflow:auto;
   right:0;
 }
-
+.tablediv {
+  margin-top:20px;
+  margin-right: 20px;
+}
 .footspan {
 font-size:15px;
 color:blue;
@@ -264,8 +269,6 @@ export default {
        },
        //跳转到末页的功能
        onLastClick () {
-       console.log(this.pageTotal)
-       console.log(this.pageLen)
          if(this.pageTotal <= this.pageLen){
              this.activeNum = this.pages.length - 1;
              console.log("当前的活跃的页数是:"+this.activeNum);
@@ -275,7 +278,6 @@ export default {
                    lastPage.push(this.pageTotal - i);
               }
               this.pages = lastPage;
-              console.log("sadf");
               this.activeNum === this.pages.length-1?this.getData():this.activeNum=this.pages.length-1
          }
        },
@@ -427,7 +429,7 @@ export default {
             if (this.activeNum+1 > this.pages.length){
                this.activeNum = this.pages.length -1;
             }
-            console.log("88888");
+
             this.getData();
         },
         'all' (newVal,oldVal){
@@ -457,8 +459,7 @@ export default {
 
                 }
            }
-             console.log("所有的獲取被選中的數據為:");
-            console.log(content);
+
                if(content.length==1 && newVal != "删除"){
                   switch(newVal){
                     case "存储池状态" :
