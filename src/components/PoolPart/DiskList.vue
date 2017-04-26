@@ -56,7 +56,7 @@
                 <nav class="boot-nav">
                   <ul class="pagination boot-page">
                     <li>
-                      <a href="#">
+                      <a href="#" @click="onFirstClick()">
                         <span class="footspan">首页</span>
                       </a>
                     </li>
@@ -64,6 +64,10 @@
                        <a href="#">
                          <span class="footspan">上一页</span>
                        </a>
+                    </li>
+                    <li v-for="page in pages" :class="activeNum == (page-1)?'active':''">
+                      <a href="#" v-text="page" @click="onPageClick(page)">
+                      </a>
                     </li>
                     <li>
                       <a href="#">
@@ -151,6 +155,8 @@ export default {
         DataTotalcopy:[],
         lens:[5,10,20],
         len: 5,
+        pages:[],
+        active:"active"
     }
    },
 
@@ -167,10 +173,25 @@ export default {
 
           this.DataPool = newTable;
 
+          this.DataTotal = newTable;
+          this.DataTotalcopy = newTable;
+
+         //首先获取页数
+          this.getPages();
+          this.getData();
 
     },failData => {
         console.log("获取数据失败:"+failData);
     })
+
+ },
+ methods: {
+         getPages() {
+
+         },
+         getData() {
+
+         }
 
  }
 

@@ -68,7 +68,7 @@
                     </a>
                   </li>
                   <li v-for="page in pages" :class="activeNum == (page-1)?'active':''">
-                    <a href="javascript:void(0)" v-text="page" @click="onPageClick(page)"></a>
+                    <a href="#" v-text="page" @click="onPageClick(page)"></a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" aria-label="Next" @click="onNextClick()">
@@ -422,7 +422,7 @@ export default {
                   this.DataTotal = newTable;
                   this.DataTotalcopy = newTable;//add by 王圣文
                   //在数据未加载之前，先进行获取页数的操作
-                this.getPages();
+                 this.getPages();
                  this.getData();
 
 
