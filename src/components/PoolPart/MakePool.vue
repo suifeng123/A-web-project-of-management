@@ -322,11 +322,11 @@ export default {
             }
         },
         search(){
-           console.log(this.selected);
+
            var temp = this.selected;
            switch(temp){
              case "名称搜索" :
-                 console.log(this.contentSelect);
+
                  var content = [];
                  for(let i=0;i<this.DataTotal.length;i++){
                            if(this.DataTotal[i].name==this.contentSelect){

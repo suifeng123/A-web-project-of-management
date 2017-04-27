@@ -10,8 +10,8 @@
           </option>
        </select>
         <input type="text" v-model="contentSelect" style="width:100px;" />
-        <button class="btn btn-sm btn-success">搜索</button>
-        <button class="btn btn-sm btn-success">刷新</button>
+        <button class="btn btn-sm btn-success" @click="search()">搜索</button>
+        <button class="btn btn-sm btn-success" @click="refresh()">刷新</button>
         <select required v-model="initial">
            <option v-for="action in actions">
                {{action}}
@@ -23,7 +23,7 @@
       <table class="table table-hover table-bordered">
         <thead>
           <tr>
-            <th style="20px;"><label style="width:10px;"><input type="checkbox"  /> </label></th>
+            <th style="20px;"><label style="width:10px;"><input type="checkbox" v-model="all" value="all" /> </label></th>
             <th>名称</th>
             <th>磁盘大小</th>
             <th>所属存储池</th>
@@ -161,6 +161,7 @@ export default {
         active:"active",
         pageTotal:1,
         pageLen: 5,//当初始化的时候的时候PageLen的长度
+        all: false
     }
    },
 
@@ -301,6 +302,15 @@ export default {
                 this.activeNum == this.pages.length-1?this.getData():this.activeNum=this.pages.length-1
              }
              this.getData()
+        },
+
+        refresh() {
+
+              this.getData()
+        },
+
+        search() {
+
         }
 
  },
@@ -316,6 +326,18 @@ export default {
            if(this.activeNum+1 > this.pages.length){
               this.activeNum = this.pages.length - 1;
            }
+     },
+     'all' (newVal,oldVal) {
+        //监控所有的控制值
+        if(newVal == true){
+           for(var i=0;i<this.DataPool.length;i++){
+               this.DataPool[i].checkbox = true;
+           }
+        }else {
+           for(var i=0;i<this.DataPool.length;i++){
+               this.DataPool[i].checkbox = false;
+           }
+        }
      }
    }
 
