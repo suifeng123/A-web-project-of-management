@@ -26,11 +26,42 @@ export default {
        //初始化对象
        chart: null,
        //初始化图标配置
-       opinion: ['高富帅','矮富帅','']
+       opinion: ['高富帅','矮富帅','高富挫','矮富挫','女生'],
+       opinionData: [{
+          value: 26,
+          name: '高富帅'
+       },{
+          value: 31,
+          name: '矮富帅'
+       },{
+          value: 18,
+          name: '矮富挫'
+       },{
+          value: 21,
+          name: '女生'
+       }]
     }
+
 },
  methods:{
-
+     //绘图
+     drawGrap(id) {
+        //绘图方法
+        this.chart = echarts.init(document.getElementById(id))
+        //皮肤添加同一般使用方式
+        this.chart.showLoading()
+        var that = this
+        //ajax 请求数据
+        $.ajax({
+            //方式
+            type: "GET",
+            //是否异步
+            async: true,
+            //路径|| API
+            url: "xxx",
+            //返回数据形式为json
+        })
+     }
  }
 }
 </script>
