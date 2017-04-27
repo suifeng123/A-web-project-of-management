@@ -37,6 +37,8 @@ import EditPool from './components/ActionPool/EditPool'
 import ExpersionPool from './components/ActionPool/ExpansionPool'
 //引入系统的组件
 import System from './components/System/System'
+//引入组件监控展示的组件 echarts
+
 
 
 

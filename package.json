@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "echarts": "^3.5.4",
     "v-vuerify-next": "^0.2.0",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0",
