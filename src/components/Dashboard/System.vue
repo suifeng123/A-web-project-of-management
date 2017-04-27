@@ -1,6 +1,6 @@
 <template>
-    <div id="maindiv" class="maindiv">
-      {{version}}
+    <div  class="maindiv">
+      <div id="main"></div>
     </div>
 </template>
 <style scoped>
@@ -11,32 +11,22 @@
     right:500px;
     bottom:300px;
 }
-.bar text {
-   font-weight:bold;
-   font-size:30px;
-}
-.bar react {
-    fill: #95859c;
-    shape-rendering: crispEdges;
-}
-.axis path,.axis line {
-  fill:none;
-  stroke:#0000;
-  shape-rendering:crispEdges;
+#main {
+  height: 400px;
 }
 </style>
 <script>
 import * as d3 from 'd3'
+//引入展示监控的监控空间echarts
 import echarts from 'echarts'
+import $ from 'jquery' //引入dom操作空间jquery
 export default {
   data() {
     return {
-      data:[1,2,3,4,5],
-      version: d3.version,
-      values: [0,1,2,3,4,5,6,7,8,9,2,3,4,5,5,5,5,5,1,1,7,7,7,6,4,8],
-      width: 960,
-      height: 500,
-      padding: 6
+       //初始化对象
+       chart: null,
+       //初始化图标配置
+       opinion: ['高富帅','矮富帅','']
     }
 },
  methods:{
