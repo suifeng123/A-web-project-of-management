@@ -305,12 +305,71 @@ export default {
         },
 
         refresh() {
+          this.$http.get('/hikcmd/global/disks/').then(successData=>{
+          var newTable = [];
+          var  comData = successData.body;
 
-              this.getData()
+          for(var key in comData){
+            newTable.push(comData[key]);
+          }
+          console.log(newTable);
+          for(var i=0;i<newTable.length;i++){
+             //向每一个选项中填一个checkbox选项,添加完毕
+             for(var key in newTable[i]){
+                 newTable[i]['checkbox'] = false;
+             }
+
+          }
+          this.DataPool = newTable;
+
+          this.DataTotal = newTable;
+          this.DataTotalcopy = newTable;
+
+         //首先获取页数
+          this.getPages();
+          this.getData();
+
+    },failData => {
+        console.log("获取数据失败:"+failData);
+    })
+
         },
 
         search() {
+              var temp = this.selected;
+              switch(temp){
+                 case "名称搜索" :
+                    var content = [];
+                    for(let i=0;i<this.DataTotal.length;i++){
+                       if(this.DataTotal[i].name == this.contentSelect){
+                          content.push(this.DataTotal[i])
+                       }
+                    }
 
+                    var temp1 = this.DataTotal;
+                    this.DataPool = content;
+                    this.DataTotal = content;
+                    this.getPages();
+                    this.getData();
+                    this.DataTotal = temp1;
+                    break;
+
+                 case "状态搜索" :
+                    var content = [];
+                    for(let i=0;i<this.DataTotal.length;i++){
+                         if(this.DataTotal[i].healthy == this.contentSelect){
+                             content.push(this.DataTotal[i])
+                         }
+                     }
+                     var temp1 = this.DataTotal;
+                     this.DataPool = content;
+                     this.DataTotal = content;
+                     this.getPages();
+                     this.getData();
+                     this.DataTotal = temp1;
+                     break;
+
+              }
         }
 
  },
@@ -338,6 +397,17 @@ export default {
                this.DataPool[i].checkbox = false;
            }
         }
+     },
+
+     'initial' (newVal,oldVal) {
+           var content = [];
+           if(this.all == true){
+               for(let i=0;i<this.DataPool.length;i++){
+
+               }
+           }else{
+
+           }
      }
    }
 

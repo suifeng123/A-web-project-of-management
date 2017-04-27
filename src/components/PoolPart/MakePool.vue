@@ -333,12 +333,12 @@ export default {
                                   content.push(this.DataTotal[i])
                            }
                  }
-                 var temp1 = this.DataToal;
+                 var temp1 = this.DataTotal;
                  this.DataPool = content;
                  this.DataTotal = content;
                  this.getPages();
                  this.getData();
-                 this.DataToal = temp1;
+                 this.DataTotal = temp1;
                  break;
 
               case "状态搜索" :
@@ -349,12 +349,12 @@ export default {
                                   content.push(this.DataTotal[i])
                            }
                  }
-                 var temp1 = this.DataToal;
+                 var temp1 = this.DataTotal;
                  this.DataPool = content;
                  this.DataTotal = content;
                  this.getPages();
                  this.getData();
-                 this.DataToal = temp1;
+                 this.DataTotal = temp1;
                  break;
               }
         },
