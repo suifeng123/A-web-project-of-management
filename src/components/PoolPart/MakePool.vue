@@ -482,12 +482,13 @@ export default {
                             alert("请选择一项");
                         else
                              this.$router.push({path:'/storage/chi/expersion'});
+                        break;
                     case "一致性检查":
 
                                  if(confirm("您确定进行一致性检查吗???")==true){
                                      console.log("进行对存储池进行一致性检查的操作");
                                  }
-
+                          break;
 
                     case "删除" :
                            if(confirm("您确定删除此存储池吗???")==true){
@@ -503,6 +504,7 @@ export default {
                           }
 
                     }
+
               }
 
         }

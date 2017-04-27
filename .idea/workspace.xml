@@ -3,6 +3,7 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/components/Dashboard.vue" line="25" />
     <bookmark url="file://$PROJECT_DIR$/src/components/ActionPool/ActionCreate.vue" line="13" />
+    <bookmark url="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue" line="419" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
@@ -46,7 +47,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="224">
-                  <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+                  <caret line="427" column="12" lean-forward="true" selection-start-line="427" selection-start-column="12" selection-end-line="427" selection-end-column="12" />
                   <folding>
                     <element signature="n#tr#0;n#table#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
                     <element signature="n#style#0;n#!!top" expanded="false" />
@@ -62,8 +63,8 @@
           <file leaf-file-name="MakePool.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/PoolPart/MakePool.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1840">
-                  <caret line="367" column="26" lean-forward="true" selection-start-line="367" selection-start-column="26" selection-end-line="367" selection-end-column="26" />
+                <state relative-caret-position="46">
+                  <caret line="508" column="0" lean-forward="true" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -336,12 +337,12 @@
       <workItem from="1493016504417" duration="7072000" />
       <workItem from="1493105326988" duration="3154000" />
       <workItem from="1493183832164" duration="11811000" />
-      <workItem from="1493269477243" duration="4238000" />
+      <workItem from="1493269477243" duration="5531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107262000" />
+    <option name="totallyTimeSpent" value="108555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="0" width="1382" height="744" extended-state="0" />
@@ -724,6 +725,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -746,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/MakePool.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1840">
-          <caret line="367" column="26" lean-forward="true" selection-start-line="367" selection-start-column="26" selection-end-line="367" selection-end-column="26" />
+        <state relative-caret-position="46">
+          <caret line="508" column="0" lean-forward="true" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -755,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+          <caret line="427" column="12" lean-forward="true" selection-start-line="427" selection-start-column="12" selection-end-line="427" selection-end-column="12" />
           <folding>
             <element signature="n#tr#0;n#table#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#!!top" expanded="false" />

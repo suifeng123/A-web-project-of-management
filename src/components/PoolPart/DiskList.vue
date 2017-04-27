@@ -403,10 +403,28 @@ export default {
            var content = [];
            if(this.all == true){
                for(let i=0;i<this.DataPool.length;i++){
-
+                      for(let i=0;i<this.DataPool.length;i++){
+                         content.push(this.DataPool[i]['name'])
+                      }
                }
            }else{
+                for(let i=0;i<this.DataPool.length;i++){
+                   if(this.DataPool[i]['checkbox'] == true)
+                      content.push(this.DataPool[i]['name'])
+                }
+           }
 
+           //进行逐项的选择
+           switch (newVal) {
+              case "擦除" :
+                 if(confirm("您确定擦除这些磁盘吗?")==true){
+                       console.log("进行对这些磁盘的擦除操作");
+                 }
+                 break;
+              case "修改":
+                if(confirm("您确定对这些磁盘进行修改吗?")==true){
+                   console.log("进行对这些磁盘进行修改的操作");
+                }
            }
      }
    }
