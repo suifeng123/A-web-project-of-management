@@ -37,7 +37,7 @@
         </thead>
         <tbody>
             <tr v-for="data in DataPool">
-              <td><label><input type="checkbox" /></label></td>
+              <td><label><input type="checkbox" v-model="data.checkbox" value="data.checkbox" /></label></td>
               <td v-text="data.name"></td>
               <td v-text="data.size"></td>
               <td v-text="data.config_pool"></td>
@@ -169,12 +169,18 @@ export default {
     this.$http.get('/hikcmd/global/disks/').then(successData=>{
           var newTable = [];
           var  comData = successData.body;
-        console.log(comData[1]['media_type']);
+
           for(var key in comData){
             newTable.push(comData[key]);
+          }
+          console.log(newTable);
+          for(var i=0;i<newTable.length;i++){
+             //向每一个选项中填一个checkbox选项,添加完毕
+             for(var key in newTable[i]){
+                 newTable[i]['checkbox'] = false;
+             }
 
           }
-
           this.DataPool = newTable;
 
           this.DataTotal = newTable;

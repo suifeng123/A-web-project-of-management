@@ -45,8 +45,8 @@
           <file leaf-file-name="DiskList.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="196" column="25" lean-forward="false" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+                <state relative-caret-position="109">
+                  <caret line="177" column="40" lean-forward="false" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -59,11 +59,9 @@
           <file leaf-file-name="MakePool.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/PoolPart/MakePool.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="430" column="0" lean-forward="false" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#table#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-                  </folding>
+                <state relative-caret-position="9131">
+                  <caret line="433" column="10" lean-forward="true" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -335,12 +333,12 @@
       <workItem from="1493016504417" duration="7072000" />
       <workItem from="1493105326988" duration="3154000" />
       <workItem from="1493183832164" duration="11811000" />
-      <workItem from="1493269477243" duration="1506000" />
+      <workItem from="1493269477243" duration="2307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104530000" />
+    <option name="totallyTimeSpent" value="105331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="0" width="1382" height="744" extended-state="0" />
@@ -745,18 +743,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/MakePool.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="430" column="0" lean-forward="false" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
-          <folding>
-            <element signature="n#table#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="9131">
+          <caret line="433" column="10" lean-forward="true" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PoolPart/DiskList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="196" column="25" lean-forward="false" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+        <state relative-caret-position="109">
+          <caret line="177" column="40" lean-forward="false" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="40" />
           <folding />
         </state>
       </provider>
