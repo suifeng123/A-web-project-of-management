@@ -193,6 +193,8 @@ export default {
          getPages() {
           //获取总的页数
           this.pageTotal = Math.ceil(this.DataTotal.length/this.len);
+          //调用之前先要使其职位空的数组
+          this.pages = []
           //比较总的页数和当前显示的页数
           if(this.pageTotal <= this.pageLen){
                for(let i=1;i<=this.pageTotal;i++){
@@ -302,8 +304,9 @@ export default {
      'len' (newVal,oldVal) {
           console.log("开始监听变化");
 
-           this.getData()
+
            this.getPages()
+           this.getData()
            if(this.activeNum+1 > this.pages.length){
               this.activeNum = this.pages.length - 1;
            }
