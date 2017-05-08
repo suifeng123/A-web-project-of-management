@@ -2,25 +2,18 @@
 
     <div  class="maindiv">
 
-      <div id="main"></div>
+      <div id="main" :style="{width:'600px',height:'400px'}"></div>
 
     </div>
 </template>
 <style scoped>
 .maindiv {
     position:absolute;
-    top:0px;
-    left:0px;
+    top:60px;
+    left:180px;
+    overflow: auto;
+}
 
-}
-#main {
-  position:absolute;
-  left: 0px;
-  top: 60px;
-  bottom: 100px;
-  height:100px;
-  width: 100px;
-}
 
 </style>
 <script>
@@ -47,12 +40,32 @@ export default {
        },{
           value: 21,
           name: '女生'
-       }]
+       }],
+       msg: "123",
+
     }
 
 },
+ mounted () {
+     var myChart = echarts.init(document.getElementById('main'))
+     myChart.setOption({
+         title: {text: 'Echarts 入门实例'},
+         tooltip: {},
+         xAxis: {
+            data: ["衬衫","羊毛衫","裤子"]
+         },
+         yAxis: {},
+         series: [{
+              name: "销量",
+              type: 'bar',
+              data: [5,20,36]
+          }]
+
+     });
+ },
  methods:{
      //绘图
+     /**
      drawGraph(id) {
 
         //绘图方法
@@ -130,13 +143,16 @@ export default {
         })
         this.chart.hideLoading()
      }
+     **/
  },
  created: function() {
-
+/**
    this.$nextTick(function() {
      this.drawGraph('main')
    })
 
  }
+ **/
+}
 }
 </script>
