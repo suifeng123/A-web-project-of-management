@@ -1,16 +1,15 @@
 <template>
 
-    <div  class="maindiv">
+<div class="maindiv">
+  <h3>这个是前端的组件</h3>
+</div>
 
-      <div id="main" :style="{width:'600px',height:'400px'}"></div>
-
-    </div>
 </template>
 <style scoped>
 .maindiv {
     position:absolute;
-    top:60px;
-    left:180px;
+    top:0px;
+    left:0px;
     overflow: auto;
 }
 
@@ -46,6 +45,7 @@ export default {
     }
 
 },
+/**
  mounted () {
      var myChart = echarts.init(document.getElementById('main'))
      myChart.setOption({
@@ -63,6 +63,7 @@ export default {
 
      });
  },
+ **/
  methods:{
      //绘图
      /**
