@@ -1,7 +1,8 @@
 <template>
   <div class="dashboard">
-    <BandWidth></BandWidth>
     <System></System>
+    <BandWidth></BandWidth>
+
     <Alert></Alert>
     <Capacity></Capacity>
   </div>

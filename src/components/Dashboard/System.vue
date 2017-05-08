@@ -1,15 +1,25 @@
 <template>
+
     <div  class="maindiv">
+
       <div id="main"></div>
+
     </div>
 </template>
 <style scoped>
 .maindiv {
     position:absolute;
     top:0px;
-    left:180px;
-    right:500px;
-    bottom:300px;
+    left:0px;
+
+}
+#main {
+  position:absolute;
+  left: 0px;
+  top: 60px;
+  bottom: 100px;
+  height:100px;
+  width: 100px;
 }
 
 </style>
@@ -43,8 +53,8 @@ export default {
 },
  methods:{
      //绘图
-     drawGrap(id) {
-       console.log($);
+     drawGraph(id) {
+
         //绘图方法
         this.chart = echarts.init(document.getElementById(id))
         //皮肤添加同一般使用方式
@@ -121,10 +131,12 @@ export default {
         this.chart.hideLoading()
      }
  },
- mounted() {
+ created: function() {
+
    this.$nextTick(function() {
-     this.drawGrap('main')
+     this.drawGraph('main')
    })
+
  }
 }
 </script>
