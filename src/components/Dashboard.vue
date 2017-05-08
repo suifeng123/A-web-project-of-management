@@ -1,8 +1,7 @@
 <template>
   <div class="dashboard">
     <System></System>
-    <BandWidth></BandWidth>
-
+    <Bandwidth></Bandwidth>
     <Alert></Alert>
     <Capacity></Capacity>
   </div>
@@ -19,10 +18,11 @@
 }
 </style>
 <script>
-import BandWidth from './Dashboard/BandWidth'
+import Bandwidth from './Dashboard/BandWidth'
 import System from './Dashboard/System'
 import Alert from './Dashboard/Alert'
 import Capacity from './Dashboard/Capacity'
+
 export default {
      data () {
        return {
@@ -82,7 +82,7 @@ export default {
          */
    },
    components:{
-      BandWidth,
+      Bandwidth,
       System,
       Alert,
       Capacity

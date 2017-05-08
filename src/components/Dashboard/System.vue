@@ -1,17 +1,17 @@
 <template>
 
-<div class="maindiv">
-  <h3>这个是前端的组件</h3>
-</div>
+
+
 
 </template>
 <style scoped>
 .maindiv {
     position:absolute;
     top:0px;
-    left:0px;
+    left:200px;
     overflow: auto;
 }
+
 
 
 </style>
@@ -55,6 +55,7 @@ export default {
             data: ["衬衫","羊毛衫","裤子"]
          },
          yAxis: {},
+
          series: [{
               name: "销量",
               type: 'bar',
@@ -63,7 +64,7 @@ export default {
 
      });
  },
- **/
+**/
  methods:{
      //绘图
      /**
