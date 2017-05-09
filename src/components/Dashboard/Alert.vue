@@ -28,6 +28,7 @@ export default {
       }
    },
     mounted() {
+    console.log(this.msg)
      var myChart = echarts.init(document.getElementById('alert'))
 
      myChart.setOption({

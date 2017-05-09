@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue" afterPath="$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dashboard/Alert.vue" afterPath="$PROJECT_DIR$/src/components/Dashboard/Alert.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dashboard/System.vue" afterPath="$PROJECT_DIR$/src/components/Dashboard/System.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,30 +28,48 @@
     <favorites_list name="webmanagement" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BandWidth.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alert.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Dashboard/Alert.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.8832055">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="System.vue" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Dashboard/System.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Alert.vue" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Dashboard/Alert.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="BandWidth.vue" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="217">
+                  <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="29" />
+                  <folding>
+                    <element signature="n#style#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -78,10 +97,10 @@
         <option value="$PROJECT_DIR$/src/components/PoolPart/DiskList.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/components/Dashboard.vue" />
-        <option value="$PROJECT_DIR$/src/components/Dashboard/System.vue" />
         <option value="$PROJECT_DIR$/src/components/Home.vue" />
-        <option value="$PROJECT_DIR$/src/components/Dashboard/Alert.vue" />
         <option value="$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue" />
+        <option value="$PROJECT_DIR$/src/components/Dashboard/Alert.vue" />
+        <option value="$PROJECT_DIR$/src/components/Dashboard/System.vue" />
       </list>
     </option>
   </component>
@@ -99,8 +118,8 @@
     <handled-path value="$PROJECT_DIR$/testproject/test1/test3/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="280" />
-    <option name="y" value="4" />
+    <option name="x" value="476" />
+    <option name="y" value="25" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -337,15 +356,15 @@
       <workItem from="1493183832164" duration="11811000" />
       <workItem from="1493269477243" duration="12371000" />
       <workItem from="1494225439895" duration="9813000" />
-      <workItem from="1494310089733" duration="2731000" />
+      <workItem from="1494310089733" duration="6594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127939000" />
+    <option name="totallyTimeSpent" value="131802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="4" width="1382" height="744" extended-state="0" />
+    <frame x="476" y="25" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12648809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -746,29 +765,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Dashboard/System.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="217">
+          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dashboard/Alert.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="375">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Dashboard/BandWidth.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/Dashboard/System.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="97" column="33" lean-forward="false" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
