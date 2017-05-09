@@ -8,12 +8,12 @@
     position:absolute;
     right:0;
     bottom:0;
-    left:500px;
-    top:300px;
+    left:600px;
+    top:600px;
   }
   #bindwidth {
-     height: 400px;
-     width: 400px;
+     height: 600px;
+     width: 600px;
   }
 </style>
 <script>

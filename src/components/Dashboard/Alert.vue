@@ -32,7 +32,7 @@ export default {
      var myChart = echarts.init(document.getElementById('alert'))
 
      myChart.setOption({
-         title: {text: 'Echarts 入门实例'},
+         title: {text: '商品销售统计'},
          tooltip: {},
          xAxis: {
             data: ["衬衫","羊毛衫","裤子"]
