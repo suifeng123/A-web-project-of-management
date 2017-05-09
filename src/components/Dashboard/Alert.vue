@@ -1,6 +1,6 @@
 <template>
 <div class="maindiv">
-     <div id="alert" style="width:600px;height:400px;"></div>
+     <div id="alert"></div>
 </div>
 </template>
 <style scoped>
@@ -12,6 +12,7 @@
       bottom:300px;
   }
 #alert {
+
    width: 400px;
    height: 400px;
 }
@@ -36,8 +37,8 @@ export default {
             data: ["衬衫","羊毛衫","裤子"]
          },
          yAxis: {},
-         height: 100,
-         width: 100,
+         height: 200,
+         width: 400,
          series: [{
               name: "销量",
               type: 'bar',
