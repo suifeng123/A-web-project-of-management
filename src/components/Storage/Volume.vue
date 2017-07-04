@@ -7,7 +7,7 @@
       </el-table>
       <br />
       <br />
-      
+
     </div>
 </template>
 <style scoped>
