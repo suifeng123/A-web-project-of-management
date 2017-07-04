@@ -166,7 +166,7 @@ export default {
    },
 
  created: function() {
-  //获取数据
+      //获取数据
     this.$http.get('/hikcmd/global/disks/').then(successData=>{
           var newTable = [];
           var  comData = successData.body;
@@ -278,7 +278,7 @@ export default {
          onFirstClick () {
              if(this.pages[0] == 1){
                   this.activeNum = 0;
-             }else {
+             } else {
                 let originPage = []
                 for(let i=1;i<=this.pageLen;i++){
                   originPage.push(i)
@@ -329,7 +329,7 @@ export default {
           this.getPages();
           this.getData();
 
-    },failData => {
+     },failData => {
         console.log("获取数据失败:"+failData);
     })
 

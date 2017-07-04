@@ -446,7 +446,7 @@ export default {
         'activeNum' (newVal,oldVal) {
            this.getData()
         },
-        'initialAction' (newVal,oldVal){
+        'initialAction' (newVal,oldVal) {
            //TODO 進行具體的操作，首先獲取所需要的數據
            var content = [];//定義一個數組，用來娶我麼想要的數據
             if(this.all==true){
