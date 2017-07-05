@@ -1,9 +1,6 @@
 <template>
   <div class="dashboard">
-    <System></System>
-    <Bandwidth></Bandwidth>
-    <Alert></Alert>
-    <Capacity></Capacity>
+  <SettingTable />
   </div>
 </template>
 <style scoped>
@@ -22,7 +19,7 @@ import Bandwidth from './Dashboard/BandWidth'
 import System from './Dashboard/System'
 import Alert from './Dashboard/Alert'
 import Capacity from './Dashboard/Capacity'
-
+import SettingTable from './toolsComponent/Settingtable'
 export default {
      data () {
        return {
@@ -85,7 +82,8 @@ export default {
       Bandwidth,
       System,
       Alert,
-      Capacity
+      Capacity,
+        SettingTable
    }
 }
 
