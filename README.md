@@ -1,6 +1,7 @@
-# refactoring
+# 项目简介
+此项目基于Vue2+axios+Vue-router+Element1.x的一个前端项目，基于webpack打包。此项目是一个控制台软件,类似于阿里云的控制台的软件。
+提供系统定时登出、浏览器检测、和底层自动刷新功能。
 
-> 这个是统一存储的前端重构项目
 
 ## Build Setup
 
