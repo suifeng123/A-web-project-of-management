@@ -6,6 +6,8 @@ import router from './router'
 //使用muse-ui
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+//引入echarts
+import echarts from 'echarts';
 Vue.config.productionTip = false
 Vue.use(MuseUI)
 /* eslint-disable no-new */

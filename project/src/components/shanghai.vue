@@ -1,11 +1,14 @@
 <template>
-<div>
-  <h1>上海</h1>
+<div id="main" style="width: 600px;height:600px;">
+
 </div>
 </template>
 
 <script>
-    export default {}
+  //进行图标的数据的加载
+  export default {
+    data()
+  }
 </script>
 
 <style>

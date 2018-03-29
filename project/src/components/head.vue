@@ -1,7 +1,7 @@
 <template>
 <div class="header">
   <div class="logo">
-    Muse-UI
+    城市地图
   </div>
   <div class="nav">
     <mu-tabs :value="activeTab" @change="handleTabChange" class="tab">
