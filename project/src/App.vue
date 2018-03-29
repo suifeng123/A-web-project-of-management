@@ -14,7 +14,8 @@
 export default {
   name: 'App',
   components:{
-    headerTop
+    headerTop,
+    leftBar,
   }
 }
 </script>

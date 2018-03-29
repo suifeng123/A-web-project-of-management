@@ -3,8 +3,15 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/project/config/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/beijing.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/changsha.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/guangzhou.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/hangzhou.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project/src/components/head.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project/src/components/leftBar.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/shanghai.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/components/shenzhen.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/src/router/index.js" charset="UTF-8" />
   </component>
 </project>
