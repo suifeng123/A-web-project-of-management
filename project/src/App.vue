@@ -5,18 +5,26 @@
     <headerTop></headerTop>
 
     <leftBar></leftBar>
-    <router-view/>
+    <div class="content-right">
+      <bread></bread>
+      <router-view/>
+      <footerdiv></footerdiv>
+    </div>
   </div>
 </template>
 
 <script>
   import headerTop from './components/head';
  import leftBar from './components/leftBar';
+  import bread from './components/bread';
+  import footerdiv from './components/footer';
 export default {
   name: 'App',
   components:{
     headerTop,
     leftBar,
+    bread,
+    footerdiv,
   }
 }
 </script>
@@ -27,7 +35,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: #2c3e50;
+  background-color: #7e57c2;
   margin-top: 0px;
+}
+
+.content-right{
+  width: 70%;
+  display: inline-block;
+  float: right;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
 </style>

@@ -48,10 +48,10 @@
 
   .content-left{
     width: 30%;
-    float: left;
+    height: calc(100% - 60px);
+    position: absolute;
+    border-right:2px solid red;
     background-color: white;
-    margin-bottom: -4000px;
-    padding-bottom: 4000px;
-    border-right: 2px solid blue;
+
   }
 </style>
