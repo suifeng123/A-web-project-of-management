@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9796ed48-e611-4185-a7e5-e367e434784d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/App.vue" afterPath="$PROJECT_DIR$/project/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/router/index.js" afterPath="$PROJECT_DIR$/project/src/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/components/beijing.vue" afterPath="$PROJECT_DIR$/project/src/components/beijing.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/components/leftBar.vue" afterPath="$PROJECT_DIR$/project/src/components/leftBar.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,17 +31,17 @@
         <entry file="file://$PROJECT_DIR$/project/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.354838">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leftBar.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="leftBar.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/src/components/leftBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.32258">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.676311">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -51,8 +50,8 @@
       <file leaf-file-name="beijing.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/src/components/beijing.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4193548">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state vertical-scroll-proportion="-11.354838">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5856164">
-              <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -175,15 +174,15 @@
         <option value="$PROJECT_DIR$/project/config/index.js" />
         <option value="$PROJECT_DIR$/project/src/main.js" />
         <option value="$PROJECT_DIR$/project/src/components/head.vue" />
-        <option value="$PROJECT_DIR$/project/src/App.vue" />
-        <option value="$PROJECT_DIR$/project/src/components/leftBar.vue" />
-        <option value="$PROJECT_DIR$/project/src/components/beijing.vue" />
         <option value="$PROJECT_DIR$/project/src/components/shanghai.vue" />
         <option value="$PROJECT_DIR$/project/src/components/hangzhou.vue" />
         <option value="$PROJECT_DIR$/project/src/components/guangzhou.vue" />
         <option value="$PROJECT_DIR$/project/src/components/shenzhen.vue" />
         <option value="$PROJECT_DIR$/project/src/components/changsha.vue" />
         <option value="$PROJECT_DIR$/project/src/router/index.js" />
+        <option value="$PROJECT_DIR$/project/src/App.vue" />
+        <option value="$PROJECT_DIR$/project/src/components/leftBar.vue" />
+        <option value="$PROJECT_DIR$/project/src/components/beijing.vue" />
       </list>
     </option>
   </component>
@@ -653,30 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/src/components/leftBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.32258">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/src/components/beijing.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4193548">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/src/components/shanghai.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4193548">
@@ -719,8 +694,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5856164">
-          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/src/components/beijing.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/src/components/leftBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.676311">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding />
         </state>
       </provider>
