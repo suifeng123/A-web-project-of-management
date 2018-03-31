@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <!--首页分为三个部分 --
-     分别为 顶部部分  左侧部分 和右侧部分 -->
-    <headerTop></headerTop>
+    <div v-show="login">
+      <login></login>
+    </div>
+    <div v-show="!login">
 
-    <leftBar></leftBar>
-    <div class="content-right">
-      <bread></bread>
-      <router-view/>
-      <footerdiv></footerdiv>
+     <headerTop></headerTop>
+
+     <leftBar></leftBar>
+     <div class="content-right">
+        <bread></bread>
+        <router-view/>
+        <footerdiv></footerdiv>
+     </div>
     </div>
   </div>
 </template>
@@ -18,18 +22,27 @@
  import leftBar from './components/leftBar';
   import bread from './components/bread';
   import footerdiv from './components/footer';
+  import login from './components/login'
 export default {
   name: 'App',
+  data(){
+     return {}
+  },
+  computed:{
+    login(){
+      return this.$route.fullPath=='/login'
+    }
+  },
   components:{
     headerTop,
     leftBar,
     bread,
     footerdiv,
+    login,
   }
 }
 </script>
 
-<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -11,7 +11,7 @@
     return {
       option:{
         title: {
-          text: 'ECharts 入门示例'
+          text: 'ECharts'
         },
         tooltip: {},
         legend: {
